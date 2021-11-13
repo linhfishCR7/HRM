@@ -13,6 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="/../../Content/images/icon.png" />
+    <!-- Responsive Table css -->
+    <link href="/../../Content/Themes/Minton_green/assets/libs/rwd-table/rwd-table.min.css" rel="stylesheet" type="text/css">
     <!-- App css -->
     <link href="/../../Content/Themes/Minton_green/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/../../Content/Themes/Minton_green/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -88,22 +90,22 @@
                     </a>
                     <div class="dropdown-menu">
                         <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">
+                        <%--<a href="javascript:void(0);" class="dropdown-item">
                             <i class="fe-briefcase mr-1"></i>
                             <span>New Projects</span>
-                        </a>
+                        </a>--%>
 
                         <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">
+                        <%--<a href="javascript:void(0);" class="dropdown-item">
                             <i class="fe-user mr-1"></i>
                             <span>Create Users</span>
-                        </a>
+                        </a>--%>
 
                         <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">
+                        <%--<a href="javascript:void(0);" class="dropdown-item">
                             <i class="fe-bar-chart-line- mr-1"></i>
                             <span>Revenue Report</span>
-                        </a>
+                        </a>--%>
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item">
@@ -170,11 +172,11 @@
                                 <li>
                                     <a href="A_BoPhan.aspx">Bộ Phận</a>
                                 </li>
-                                <li>
+                                <%--<li>
                                     <a href="A_KyKeToan.aspx">Kỳ Kế Toán</a>
-                                </li>
+                                </li>--%>
                                 <li>
-                                    <a href="A_PhanQuyen.aspx">Phân Quyền</a>
+                                    <a href="A_PhanQuyen.aspx">Quyền</a>
                                 </li>
                                 <li>
                                     <a href="A_TaiKhoanNguoiDung.aspx">Tài Khoản Người Dùng</a>
@@ -183,7 +185,7 @@
                                     <a href="A_TaiKhoanDuAn.aspx">Tài Khoản Dự Án</a>
                                 </li>
                                 <li>
-                                    <a href="A_QuyenCongTy.aspx">Quyền Công Ty</a>
+                                    <a href="A_QuyenCongTy.aspx">Phân Hệ Module</a>
                                 </li>
                                 <li>
                                     <a href="A_PhanHe.aspx">Phân Hệ</a>
@@ -262,6 +264,15 @@
 
     <!-- init js -->
     <script src="/../../Content/Themes/Minton_green/assets/js/pages/dashboard-1.init.js"></script>
+
+    <!-- Vendor js -->
+    <script src="/../../Content/Themes/Minton_green/assets/js/vendor.min.js"></script>
+
+    <!-- Responsive Table js -->
+    <script src="/../../Content/Themes/Minton_green/assets/libs/rwd-table/rwd-table.min.js"></script>
+
+    <!-- Init js -->
+    <script src="/../../Content/Themes/Minton_green/assets/js/pages/responsive-table.init.js"></script>
 
     <!-- App js -->
     <script src="/../../Content/Themes/Minton_green/assets/js/app.min.js"></script>

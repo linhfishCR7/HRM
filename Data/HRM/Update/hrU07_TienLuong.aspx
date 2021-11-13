@@ -43,7 +43,7 @@
                             <asp:BoundField DataField="Ngay" HeaderText="Ngày" SortExpression="Ngay" />
                             <asp:BoundField DataField="GioCongChuan" HeaderText="Giờ Công Chuẩn" SortExpression="GioCongChuan" />
                             <asp:BoundField DataField="GioCongThucTe" HeaderText="Giờ Công Thục Tế" SortExpression="GioCongThucTe" />
-                            <asp:BoundField DataField="LuongCoBan" HeaderText="Luowgn Cơ bản" SortExpression="LuongCoBan" DataFormatString="{0:#,0.00;(#,0.00)}" />
+                            <asp:BoundField DataField="LuongCoBan" HeaderText="Lương Cơ bản" SortExpression="LuongCoBan" DataFormatString="{0:#,0.00;(#,0.00)}" />
                             <asp:BoundField DataField="HeSo" HeaderText="Hệ Số" SortExpression="HeSo" />
                             <asp:BoundField DataField="PhuCap" HeaderText="Phụ Cấp" SortExpression="PhuCap" />
                             <asp:BoundField DataField="HoTroKhac" HeaderText="Hỗ Trợ Khác" SortExpression="HoTroKhac" />
@@ -86,63 +86,63 @@
                                     <tr>
                                         <td>Giờ Công Chuẩn:</td>
                                         <td>
-                                            <asp:TextBox ID="txtGioCongChuan" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtGioCongChuan" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td>Giờ Công Thực Tế:</td>
                                         <td>
-                                            <asp:TextBox ID="txtGioCongThucTe" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtGioCongThucTe" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Lương Cơ Bản:</td>
                                         <td>
-                                            <asp:TextBox ID="txtLuongCoBan" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtLuongCoBan" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Hệ Số:</td>
                                         <td>
-                                            <asp:TextBox ID="txtHeSo" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtHeSo" runat="server">1</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Phụ Cấp:</td>
                                         <td>
-                                            <asp:TextBox ID="txtPhuCap" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtPhuCap" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td>Hỗ Trợ Khác:</td>
                                         <td>
-                                            <asp:TextBox ID="txtHoTroKhac" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtHoTroKhac" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Bảo Hiểm Bắc Buộc:</td>
                                         <td>
-                                            <asp:TextBox ID="txtBaoHiemBatBuoc" runat="server"></asp:TextBox>
+                                            <asp:DropDownList ID="ddlBaoHiemBatBuoc" CssClass="form-control" runat="server" DataSourceID="SqlDataSource2" DataTextField="HeSo" DataValueField="HeSo"></asp:DropDownList>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Thuế TNCN:</td>
                                         <td>
-                                            <asp:TextBox ID="txtThueTNCN" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtThueTNCN" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Tăng Ca:</td>
                                         <td>
-                                            <asp:TextBox ID="txtTangCa" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtTangCa" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Khác:</td>
                                         <td>
-                                            <asp:TextBox ID="txtKhac" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtKhac" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -233,7 +233,7 @@
                                     <tr>
                                         <td>Bảo Hiểm Bắc Buộc:</td>
                                         <td>
-                                            <asp:TextBox ID="txtBaoHiemBatBuoc1" runat="server"></asp:TextBox>
+                                            <asp:DropDownList ID="ddlBaoHiemBatBuoc1" CssClass="form-control" runat="server" DataSourceID="SqlDataSource2" DataTextField="HeSo" DataValueField="HeSo"></asp:DropDownList>
                                         </td>
                                     </tr>
                                     <tr>
@@ -358,6 +358,8 @@
                 <asp:Parameter Name="MaLuong" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:HRMConnectionString %>" SelectCommand="SELECT * FROM [hr_HeSoBaoHiemBatBuoc]"></asp:SqlDataSource>
+
     </div>
     <div class="row">
     </div>

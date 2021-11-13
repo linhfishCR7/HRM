@@ -53,14 +53,16 @@
                                 </asp:CommandField>
                                 <asp:BoundField HeaderText="Mã Khách Hàng" DataField="MaKhachHang" ReadOnly="True" SortExpression="MaKhachHang" InsertVisible="False"></asp:BoundField>
                                 <asp:BoundField HeaderText="Tên Khách Hàng" DataField="TenKhachHang" SortExpression="TenKhachHang"></asp:BoundField>
-                                <asp:TemplateField HeaderText="Địa Chỉ" SortExpression="DiaChi">
+                                <asp:BoundField HeaderText="Địa Chỉ" DataField="DiaChi" SortExpression="DiaChi"></asp:BoundField>
+
+                                <%--<asp:TemplateField HeaderText="Địa Chỉ" SortExpression="DiaChi">
                                     <EditItemTemplate>
-                                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("DiaChi") %>'></asp:TextBox>
+                                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Eval("DiaChi") %>'></asp:TextBox>
                                     </EditItemTemplate>
                                     <ItemTemplate>
                                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("DiaChi") %>'></asp:Label>
                                     </ItemTemplate>
-                                </asp:TemplateField>
+                                </asp:TemplateField>--%>
                                 <asp:BoundField HeaderText="SĐT" DataField="DienThoai" SortExpression="DienThoai" />
                                 <asp:BoundField HeaderText="Email" DataField="Email" SortExpression="Email" />
                                 <asp:BoundField HeaderText="Website" DataField="Website" SortExpression="Website"></asp:BoundField>

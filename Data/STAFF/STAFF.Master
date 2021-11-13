@@ -29,7 +29,7 @@
     <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <nav class="navbar navbar-fixed-top navbar-default">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -38,7 +38,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="Default.aspx">HRM-STAFF</a>
+                    <a class="navbar-brand" href="Default.aspx">HRM</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,6 +49,9 @@
                         <li><a href="#">Điều Khoản Sử Dụng</a></li>
                         <li><a href="#">Tin Tức</a></li>
                         <li><a href="#">Liên Hệ</a></li>
+                        <li>                           
+                            <a href="#"><asp:Label ID="txtEmail" runat="server"></asp:Label></a>
+                        </li>
                         <li><a href="staffLogin.aspx">Thoát</a></li>
                     </ul>
                 </div>
@@ -56,7 +59,7 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row margin-top70">
                 <div class="col-md-9 col-sm-12">
                     <asp:ContentPlaceHolder ID="MainContent" runat="server">
@@ -74,24 +77,24 @@
                                     <div class="panel-body">
                                         <a href="staffM_NhanSu.aspx"><i class="fe-minus-square"></i> Thông Tin Cá Nhân</a>
                                     </div> 
-                                    <div class="panel-body">
+                                    <%--<div class="panel-body">
                                         <a href="staffM_CongViec.aspx"><i class="fe-minus-square"></i> Công Việc</a>
                                     </div>
                                     <div class="panel-body">
                                         <a href="staffR_BaoCaoCongViec.aspx"><i class="fe-minus-square"></i> Báo Cáo Công Việc</a>
-                                    </div>
+                                    </div>--%>
                                     <div class="panel-body">
                                         <a href="staffM_HopDong.aspx"><i class="fe-minus-square"></i> Hợp Đồng Lao Động</a>
                                     </div> 
                                     <div class="panel-body">
                                         <a href="staffM_CV.aspx"><i class="fe-minus-square"></i> Sơ Yếu Lý Lịch</a>
                                     </div> 
-                                    <div class="panel-body">
+                                    <%--<div class="panel-body">
                                         <a href="staffM_PhepNam.aspx"><i class="fe-minus-square"></i> Phép Năm</a>
-                                    </div> 
-                                    <div class="panel-body">
+                                    </div>--%> 
+                                    <%--<div class="panel-body">
                                         <a href="staffR_DanhMucChamCong.aspx"><i class="fe-minus-square"></i> Chấm Công</a>
-                                    </div>
+                                    </div>--%>
                                     <div class="panel-body">
                                         <a href="staffM_PhieuTraLuongHangThang.aspx"><i class="fe-minus-square"></i> Tiền Lương</a>
                                     </div>                                     
@@ -108,15 +111,15 @@
                                     <a class="panel-title" data-toggle="collapse" data-parent="#panel-192351" href="#panel-element-UNGANH">CẬP NHẬT</a>
                                 </div>
                                 <div id="panel-element-UNGANH" class="panel-collapse collapse">
-                                    <div class="panel-body">
+                                    <%--<div class="panel-body">
                                         <a href="staffU_ChamCong.aspx"><i class="fe-refresh-ccw"></i> Chấm Công</a>
-                                    </div>
+                                    </div>--%>
                                     <div class="panel-body">
-                                        <a href="#"><i class="fe-refresh-ccw"></i> Phép Năm</a>
+                                        <a href="staffU_PhepNam.aspx"><i class="fe-refresh-ccw"></i> Phép Năm</a>
                                     </div>                                      
-                                    <div class="panel-body">
+                                    <%--<div class="panel-body">
                                         <a href="#"><i class="fe-refresh-ccw"></i> Công Việc</a>
-                                    </div>
+                                    </div>--%>
                                     <div class="panel-body">
                                         <a href="staffU_DoiMatKhau.aspx"><i class="fe-refresh-ccw"></i> Đổi Mật Khẩu</a>
                                     </div>                                         

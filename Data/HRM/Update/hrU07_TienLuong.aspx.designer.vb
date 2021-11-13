@@ -129,16 +129,16 @@ Partial Public Class hrU07_TienLuong
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtHoTroKhac As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
-    '''txtBaoHiemBatBuoc control.
+    '''ddlBaoHiemBatBuoc control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtBaoHiemBatBuoc As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents ddlBaoHiemBatBuoc As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
     '''txtThueTNCN control.
     '''</summary>
@@ -273,16 +273,16 @@ Partial Public Class hrU07_TienLuong
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtHoTroKhac1 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
-    '''txtBaoHiemBatBuoc1 control.
+    '''ddlBaoHiemBatBuoc1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtBaoHiemBatBuoc1 As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents ddlBaoHiemBatBuoc1 As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
     '''txtThueTNCN1 control.
     '''</summary>

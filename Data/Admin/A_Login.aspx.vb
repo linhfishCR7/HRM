@@ -24,7 +24,6 @@ Public Class A_Login
         Dim t As New DataTable
         da.Fill(t)
         e.Authenticated = t.Rows.Count > 0
-
         Session("LoginOK") = e.Authenticated
         If e.Authenticated Then
             'Set Level cho Session Level

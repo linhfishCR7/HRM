@@ -77,11 +77,14 @@
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -1516,7 +1519,32 @@
     <Content Include="Data\HRM\Management\hrM07_DaoTao.aspx" />
     <Content Include="Data\HRM\Management\hrM08_NhanSuCongTy.aspx" />
     <Content Include="Data\HRM\Management\hrM09_HopDongLaoDong.aspx" />
+    <Content Include="Data\HRM\Report\hrR01a_BangCap.aspx" />
     <Content Include="Data\HRM\Report\hrR01_BangCap.aspx" />
+    <Content Include="Data\HRM\Report\hrR02_ChamCong.aspx" />
+    <Content Include="Data\HRM\Report\hrR03a_ChungChi.aspx" />
+    <Content Include="Data\HRM\Report\hrR03_ChungChi.aspx" />
+    <Content Include="Data\HRM\Report\hrR04_CongTac.aspx" />
+    <Content Include="Data\HRM\Report\hrR05_DanhSachNhanSu.aspx" />
+    <Content Include="Data\HRM\Report\hrR06_DanhSachNhanSuNghiViec.aspx" />
+    <Content Include="Data\HRM\Report\hrR07a_PhieuYeuCauDaoTao.aspx" />
+    <Content Include="Data\HRM\Report\hrR07b_PhieuKiemSoatDaoTao.aspx" />
+    <Content Include="Data\HRM\Report\hrR07_DaoTao.aspx" />
+    <Content Include="Data\HRM\Report\hrR08_DieuChinhLuong.aspx" />
+    <Content Include="Data\HRM\Report\hrR09a_HopDongCaNhan.aspx" />
+    <Content Include="Data\HRM\Report\hrR09_HopDongLaoDong.aspx" />
+    <Content Include="Data\HRM\Report\hrR10_KhamSucKhoe.aspx" />
+    <Content Include="Data\HRM\Report\hrR11_KhenThuong.aspx" />
+    <Content Include="Data\HRM\Report\hrR12_KyLuat.aspx" />
+    <Content Include="Data\HRM\Report\hrR14_NgayVaoLamViec.aspx" />
+    <Content Include="Data\HRM\Report\hrR16a_PhieuBaoNghiPhep.aspx" />
+    <Content Include="Data\HRM\Report\hrR16_NghiPhep.aspx" />
+    <Content Include="Data\HRM\Report\hrR17_Profile.aspx" />
+    <Content Include="Data\HRM\Report\hrR19a_CV.aspx" />
+    <Content Include="Data\HRM\Report\hrR20_ThangTien.aspx" />
+    <Content Include="Data\HRM\Report\hrR21_TienLuong.aspx" />
+    <Content Include="Data\HRM\Report\hrR22_TongHopChamCong.aspx" />
+    <Content Include="Data\HRM\Report\hrR23_TongHopTienLuong.aspx" />
     <Content Include="Data\HRM\Update\hr00_Upload.aspx" />
     <Content Include="Data\HRM\Update\hrU00_NhanSu.aspx" />
     <Content Include="Data\HRM\Update\hrU00_ThongTinLienHeKhanCap.aspx" />
@@ -1546,8 +1574,21 @@
     <Content Include="Data\HRM\Update\hrU25_HeSoBaoHiemBatBuoc.aspx" />
     <Content Include="Data\HRM\Update\hrU26_NhanSuDuAn.aspx" />
     <Content Include="Data\STAFF\staffLogin.aspx" />
+    <Content Include="Data\STAFF\staffM_CV.aspx" />
+    <Content Include="Data\STAFF\staffM_HopDong.aspx" />
+    <Content Include="Data\STAFF\staffM_NhanSu.aspx" />
+    <Content Include="Data\STAFF\staffM_PhepNam.aspx" />
+    <Content Include="Data\STAFF\staffM_PhieuTraLuongHangThang.aspx" />
+    <Content Include="Data\STAFF\staffR_BangChamCong.aspx" />
+    <Content Include="Data\STAFF\staffR_DanhMucChamCong.aspx" />
+    <Content Include="Data\STAFF\staffR_DanhMucPhepNam.aspx" />
+    <Content Include="Data\STAFF\staffR_HopDong.aspx" />
+    <Content Include="Data\STAFF\staffR_PhieuBaoNghiPhep.aspx" />
+    <Content Include="Data\STAFF\staffR_PhieuLuong.aspx" />
+    <Content Include="Data\STAFF\staffR_TongHopTienLuong.aspx" />
     <Content Include="Data\STAFF\staffU_ChamCong.aspx" />
     <Content Include="Data\STAFF\staffU_DoiMatKhau.aspx" />
+    <Content Include="Data\STAFF\staffU_PhepNam.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -1577,11 +1618,22 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dataSet\ChamCong.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChamCong.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dataSet\dsHRM.Designer.vb">
       <DependentUpon>dsHRM.vb</DependentUpon>
     </Compile>
     <Compile Include="dataSet\dsHRM.vb">
       <DependentUpon>dsHRM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataSet\dsWM.Designer.vb">
+      <DependentUpon>dsWM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dataSet\dsWM.vb">
+      <DependentUpon>dsWM.xsd</DependentUpon>
     </Compile>
     <Compile Include="Data\Admin\Admin.Master.designer.vb">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -1793,11 +1845,186 @@
       <DependentUpon>hrM09_HopDongLaoDong.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Data\HRM\Report\hrR01a_BangCap.aspx.designer.vb">
+      <DependentUpon>hrR01a_BangCap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR01a_BangCap.aspx.vb">
+      <DependentUpon>hrR01a_BangCap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Data\HRM\Report\hrR01_BangCap.aspx.designer.vb">
       <DependentUpon>hrR01_BangCap.aspx</DependentUpon>
     </Compile>
     <Compile Include="Data\HRM\Report\hrR01_BangCap.aspx.vb">
       <DependentUpon>hrR01_BangCap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR02_ChamCong.aspx.designer.vb">
+      <DependentUpon>hrR02_ChamCong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR02_ChamCong.aspx.vb">
+      <DependentUpon>hrR02_ChamCong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR03a_ChungChi.aspx.designer.vb">
+      <DependentUpon>hrR03a_ChungChi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR03a_ChungChi.aspx.vb">
+      <DependentUpon>hrR03a_ChungChi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR03_ChungChi.aspx.designer.vb">
+      <DependentUpon>hrR03_ChungChi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR03_ChungChi.aspx.vb">
+      <DependentUpon>hrR03_ChungChi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR04_CongTac.aspx.designer.vb">
+      <DependentUpon>hrR04_CongTac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR04_CongTac.aspx.vb">
+      <DependentUpon>hrR04_CongTac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR05_DanhSachNhanSu.aspx.designer.vb">
+      <DependentUpon>hrR05_DanhSachNhanSu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR05_DanhSachNhanSu.aspx.vb">
+      <DependentUpon>hrR05_DanhSachNhanSu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR06_DanhSachNhanSuNghiViec.aspx.designer.vb">
+      <DependentUpon>hrR06_DanhSachNhanSuNghiViec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR06_DanhSachNhanSuNghiViec.aspx.vb">
+      <DependentUpon>hrR06_DanhSachNhanSuNghiViec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07a_PhieuYeuCauDaoTao.aspx.designer.vb">
+      <DependentUpon>hrR07a_PhieuYeuCauDaoTao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07a_PhieuYeuCauDaoTao.aspx.vb">
+      <DependentUpon>hrR07a_PhieuYeuCauDaoTao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07b_PhieuKiemSoatDaoTao.aspx.designer.vb">
+      <DependentUpon>hrR07b_PhieuKiemSoatDaoTao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07b_PhieuKiemSoatDaoTao.aspx.vb">
+      <DependentUpon>hrR07b_PhieuKiemSoatDaoTao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07_DaoTao.aspx.designer.vb">
+      <DependentUpon>hrR07_DaoTao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07_DaoTao.aspx.vb">
+      <DependentUpon>hrR07_DaoTao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR08_DieuChinhLuong.aspx.designer.vb">
+      <DependentUpon>hrR08_DieuChinhLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR08_DieuChinhLuong.aspx.vb">
+      <DependentUpon>hrR08_DieuChinhLuong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR09a_HopDongCaNhan.aspx.designer.vb">
+      <DependentUpon>hrR09a_HopDongCaNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR09a_HopDongCaNhan.aspx.vb">
+      <DependentUpon>hrR09a_HopDongCaNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR09_HopDongLaoDong.aspx.designer.vb">
+      <DependentUpon>hrR09_HopDongLaoDong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR09_HopDongLaoDong.aspx.vb">
+      <DependentUpon>hrR09_HopDongLaoDong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR10_KhamSucKhoe.aspx.designer.vb">
+      <DependentUpon>hrR10_KhamSucKhoe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR10_KhamSucKhoe.aspx.vb">
+      <DependentUpon>hrR10_KhamSucKhoe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR11_KhenThuong.aspx.designer.vb">
+      <DependentUpon>hrR11_KhenThuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR11_KhenThuong.aspx.vb">
+      <DependentUpon>hrR11_KhenThuong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR12_KyLuat.aspx.designer.vb">
+      <DependentUpon>hrR12_KyLuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR12_KyLuat.aspx.vb">
+      <DependentUpon>hrR12_KyLuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR14_NgayVaoLamViec.aspx.designer.vb">
+      <DependentUpon>hrR14_NgayVaoLamViec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR14_NgayVaoLamViec.aspx.vb">
+      <DependentUpon>hrR14_NgayVaoLamViec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR16a_PhieuBaoNghiPhep.aspx.designer.vb">
+      <DependentUpon>hrR16a_PhieuBaoNghiPhep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR16a_PhieuBaoNghiPhep.aspx.vb">
+      <DependentUpon>hrR16a_PhieuBaoNghiPhep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR16_NghiPhep.aspx.designer.vb">
+      <DependentUpon>hrR16_NghiPhep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR16_NghiPhep.aspx.vb">
+      <DependentUpon>hrR16_NghiPhep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR17_Profile.aspx.designer.vb">
+      <DependentUpon>hrR17_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR17_Profile.aspx.vb">
+      <DependentUpon>hrR17_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR19a_CV.aspx.designer.vb">
+      <DependentUpon>hrR19a_CV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR19a_CV.aspx.vb">
+      <DependentUpon>hrR19a_CV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR20_ThangTien.aspx.designer.vb">
+      <DependentUpon>hrR20_ThangTien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR20_ThangTien.aspx.vb">
+      <DependentUpon>hrR20_ThangTien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR21_TienLuong.aspx.designer.vb">
+      <DependentUpon>hrR21_TienLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR21_TienLuong.aspx.vb">
+      <DependentUpon>hrR21_TienLuong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR22_TongHopChamCong.aspx.designer.vb">
+      <DependentUpon>hrR22_TongHopChamCong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR22_TongHopChamCong.aspx.vb">
+      <DependentUpon>hrR22_TongHopChamCong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR23_TongHopTienLuong.aspx.designer.vb">
+      <DependentUpon>hrR23_TongHopTienLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR23_TongHopTienLuong.aspx.vb">
+      <DependentUpon>hrR23_TongHopTienLuong.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Data\HRM\Update\hr00_Upload.aspx.designer.vb">
@@ -2017,6 +2244,90 @@
       <DependentUpon>staffLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Data\STAFF\staffM_CV.aspx.designer.vb">
+      <DependentUpon>staffM_CV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_CV.aspx.vb">
+      <DependentUpon>staffM_CV.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_HopDong.aspx.designer.vb">
+      <DependentUpon>staffM_HopDong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_HopDong.aspx.vb">
+      <DependentUpon>staffM_HopDong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_NhanSu.aspx.designer.vb">
+      <DependentUpon>staffM_NhanSu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_NhanSu.aspx.vb">
+      <DependentUpon>staffM_NhanSu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_PhepNam.aspx.designer.vb">
+      <DependentUpon>staffM_PhepNam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_PhepNam.aspx.vb">
+      <DependentUpon>staffM_PhepNam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_PhieuTraLuongHangThang.aspx.designer.vb">
+      <DependentUpon>staffM_PhieuTraLuongHangThang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_PhieuTraLuongHangThang.aspx.vb">
+      <DependentUpon>staffM_PhieuTraLuongHangThang.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_BangChamCong.aspx.designer.vb">
+      <DependentUpon>staffR_BangChamCong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_BangChamCong.aspx.vb">
+      <DependentUpon>staffR_BangChamCong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_DanhMucChamCong.aspx.designer.vb">
+      <DependentUpon>staffR_DanhMucChamCong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_DanhMucChamCong.aspx.vb">
+      <DependentUpon>staffR_DanhMucChamCong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_DanhMucPhepNam.aspx.designer.vb">
+      <DependentUpon>staffR_DanhMucPhepNam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_DanhMucPhepNam.aspx.vb">
+      <DependentUpon>staffR_DanhMucPhepNam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_HopDong.aspx.designer.vb">
+      <DependentUpon>staffR_HopDong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_HopDong.aspx.vb">
+      <DependentUpon>staffR_HopDong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_PhieuBaoNghiPhep.aspx.designer.vb">
+      <DependentUpon>staffR_PhieuBaoNghiPhep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_PhieuBaoNghiPhep.aspx.vb">
+      <DependentUpon>staffR_PhieuBaoNghiPhep.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_PhieuLuong.aspx.designer.vb">
+      <DependentUpon>staffR_PhieuLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_PhieuLuong.aspx.vb">
+      <DependentUpon>staffR_PhieuLuong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_TongHopTienLuong.aspx.designer.vb">
+      <DependentUpon>staffR_TongHopTienLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_TongHopTienLuong.aspx.vb">
+      <DependentUpon>staffR_TongHopTienLuong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Data\STAFF\staffU_ChamCong.aspx.designer.vb">
       <DependentUpon>staffU_ChamCong.aspx</DependentUpon>
     </Compile>
@@ -2030,6 +2341,13 @@
     <Compile Include="Data\STAFF\staffU_DoiMatKhau.aspx.vb">
       <DependentUpon>staffU_DoiMatKhau.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffU_PhepNam.aspx.designer.vb">
+      <DependentUpon>staffU_PhepNam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffU_PhepNam.aspx.vb">
+      <DependentUpon>staffU_PhepNam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -2103,7 +2421,40 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\HRM\hrR01a_BangCap.rdlc" />
     <EmbeddedResource Include="Report\HRM\hrR01_BangCap.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR02_ChamCong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR03a_ChungChi.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR03_ChungChi.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR04_CongTac.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR05_DanhSachNhanSu.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR06_DanhSachNhanSuNghiViec.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR07a_PhieuYeuCauDaoTao.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR07b_PhieuKiemSoatDaoTao.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR07_DaoTao.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR08_DieuChinhLuong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR09a_HopDongCaNhan.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR09_HopDong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR10_KhamSucKhoe.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR11_KhenThuong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR12_KyLuat.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR15_NgayVaoLamViec.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR16a_PhieuBaoNghiPhep.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR16_NghiPhep.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR17_Profile.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR19a_CV.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR20_ThangTien.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR21_TienLuong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR22_TongHopChamCong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR23_TongHopTienLuong.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_BaoCaoCongViec.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_DanhMucChamCong.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_DanhMucCongViec.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_DanhMucPhepNam.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_HopDong.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_PhieuLuong.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_TinhTrangCongViec.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_TongHopTienLuong.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BulkFolder\DuAn.xlsx" />
@@ -2191,9 +2542,31 @@
     <Content Include="dataSet\dsHRM.xsc">
       <DependentUpon>dsHRM.xsd</DependentUpon>
     </Content>
+    <Content Include="dataSet\ChamCong.xsc">
+      <DependentUpon>ChamCong.xsd</DependentUpon>
+    </Content>
+    <None Include="dataSet\ChamCong.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChamCong.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="dataSet\ChamCong.xss">
+      <DependentUpon>ChamCong.xsd</DependentUpon>
+    </Content>
     <None Include="dataSet\dsHRM.xsd" />
     <Content Include="dataSet\dsHRM.xss">
       <DependentUpon>dsHRM.xsd</DependentUpon>
+    </Content>
+    <Content Include="dataSet\dsWM.xsc">
+      <DependentUpon>dsWM.xsd</DependentUpon>
+    </Content>
+    <None Include="dataSet\dsWM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWM1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="dataSet\dsWM.xss">
+      <DependentUpon>dsWM.xsd</DependentUpon>
     </Content>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -2216,6 +2589,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Report\Admin\" />
     <Folder Include="Templates\files\" />
     <Folder Include="Templates\flash\" />
     <Folder Include="Templates\_thumbs\Files\" />

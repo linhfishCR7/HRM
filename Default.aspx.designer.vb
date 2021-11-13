@@ -10,8 +10,6 @@
 Option Strict On
 Option Explicit On
 
-Namespace HRM
 
-    Partial Public Class _Default
-    End Class
-End Namespace
+Partial Public Class _Default
+End Class

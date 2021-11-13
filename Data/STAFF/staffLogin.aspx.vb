@@ -4,7 +4,7 @@ Public Class staffLogin
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Session("LoginOK") = False
+        Session("StaffLoginOK") = False
         Session.RemoveAll()
     End Sub
 
@@ -23,16 +23,14 @@ Public Class staffLogin
         Dim t As New DataTable
         da.Fill(t)
         e.Authenticated = t.Rows.Count > 0
-
-        Session("LoginOK") = e.Authenticated
+        Session("StaffLoginOK") = e.Authenticated
         If e.Authenticated Then
             'Set Level cho Session Level
-
             Session("Email") = t.Rows(0)("Email").ToString()
             Session("TinhTrang") = t.Rows(0)("TinhTrang").ToString()
             Response.Redirect("staffM_NhanSu.aspx")
         Else
-            ClientScript.RegisterStartupScript(Me.[GetType](), "myalert", "alert('Vui lòng nhập đúng User, Password!');", True)
+            ClientScript.RegisterStartupScript(Me.[GetType](), "myalert", "alert('Vui lòng nhập đúng Tài Khoản, Mật Khẩu!');", True)
         End If
 
     End Sub

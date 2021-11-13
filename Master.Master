@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="HRM.Master.vb" Inherits="HRM.Master" %>
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Master.Master.vb" Inherits="HRM.Master" %>
 
 <!DOCTYPE html>
 

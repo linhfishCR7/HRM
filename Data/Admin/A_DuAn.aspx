@@ -62,23 +62,27 @@
                                 <asp:BoundField HeaderText="Bắt Đầu" DataField="BatDau" SortExpression="BatDau" DataFormatString="{0:MM/dd/yyyy}"></asp:BoundField>
                                 <asp:BoundField HeaderText="Kết Thúc" DataField="KetThuc" SortExpression="KetThuc" DataFormatString="{0:MM/dd/yyyy}"></asp:BoundField>
                                 <asp:BoundField HeaderText="Tình Trạng" DataField="TinhTrang" SortExpression="TinhTrang" />
-                                <asp:TemplateField HeaderText="Quy Mô" SortExpression="QuyMo">
+                                <asp:BoundField HeaderText="Qui Mô" DataField="QuyMo" SortExpression="TinhTrang" />
+
+                                <%--<asp:TemplateField HeaderText="Quy Mô" SortExpression="QuyMo">
                                     <EditItemTemplate>
                                         <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("QuyMo") %>'></asp:TextBox>
                                     </EditItemTemplate>
                                     <ItemTemplate>
                                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("QuyMo") %>'></asp:Label>
                                     </ItemTemplate>
-                                </asp:TemplateField>
+                                </asp:TemplateField>--%>
                                 <asp:BoundField HeaderText="Hình Ảnh" DataField="HinhAnh" SortExpression="HinhAnh" />
-                                <asp:TemplateField HeaderText="Ghi Chú" SortExpression="GhiChu">
+                                <asp:BoundField HeaderText="Ghi Chú" DataField="GhiChu" SortExpression="TinhTrang" />
+                                
+                                <%--<asp:TemplateField HeaderText="Ghi Chú" SortExpression="GhiChu">
                                     <EditItemTemplate>
                                         <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("GhiChu") %>'></asp:TextBox>
                                     </EditItemTemplate>
                                     <ItemTemplate>
                                         <asp:Label ID="Label2" runat="server" Text='<%# Eval("GhiChu") %>'></asp:Label>
                                     </ItemTemplate>
-                                </asp:TemplateField>
+                                </asp:TemplateField>--%>
                                 <asp:BoundField HeaderText="Mã Khách Hàng" DataField="MaKhachHang" SortExpression="MaKhachHang" />
                                 <asp:BoundField HeaderText="Hồ Sơ Url" DataField="HoSoUrl" SortExpression="HoSoUrl" />
                             </Columns>

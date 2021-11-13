@@ -28,7 +28,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="600" EnablePartialRendering="true" EnableScriptLocalization="true" EnableScriptGlobalization="true"></asp:ScriptManager>
                 <nav class="navbar navbar-fixed-top navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -159,7 +159,7 @@
                                     <Nodes>
                                         <asp:TreeNode Text="5.1 QUẢN LÝ CÔNG TÁC" Value="#" SelectAction="None">
                                             <asp:TreeNode Text="5.1.1 Công Tác" Value="#" NavigateUrl="~/Data/HRM/Report/hrR04_CongTac.aspx"></asp:TreeNode>
-                                            <asp:TreeNode NavigateUrl="~/Data/HRM/Report/hrR19a_CV.aspx" Text="5.1.2 Sơ Yếu Lý Lịch" Value="5.1.2 Sơ Yếu Lý Lịch"></asp:TreeNode>
+<%--                                            <asp:TreeNode NavigateUrl="~/Data/HRM/Report/hrR19a_CV.aspx" Text="5.1.2 Sơ Yếu Lý Lịch" Value="5.1.2 Sơ Yếu Lý Lịch"></asp:TreeNode>--%>
                                         </asp:TreeNode>
                                         <asp:TreeNode Text="5.2 CẬP NHẬT CÔNG TÁC" Value="5.2 CẬP NHẬT CÔNG TÁC">
                                             <asp:TreeNode NavigateUrl="~/Data/HRM/Update/hrU04_CongTac.aspx" Text="5.2.1 Cập Nhật Công Tác" Value="5.2.1 Cập Nhật Công Tác"></asp:TreeNode>
@@ -203,7 +203,7 @@
                                         </asp:TreeNode>
                                         <asp:TreeNode Text="7.2 CẬP NHẬT TIỀN LƯƠNG" Value="7.2 CẬP NHẬT TIỀN LƯƠNG">
                                             <asp:TreeNode NavigateUrl="~/Data/HRM/Update/hrU07_TienLuong.aspx" Text="7.2.1 Cập Nhật Tiền Lương" Value="7.2.1 Cập Nhật Tiền Lương"></asp:TreeNode>
-                                            <asp:TreeNode NavigateUrl="~/Data/HRM/Update/hrU08_DieuChinhLuong.aspx" Text="7.2.2 Cập Nhật Điều Chỉnh Lương" Value="7.2.2 Cập Nhật Điều Chỉnh Lương"></asp:TreeNode>
+<%--                                            <asp:TreeNode NavigateUrl="~/Data/HRM/Update/hrU08_DieuChinhLuong.aspx" Text="7.2.2 Cập Nhật Điều Chỉnh Lương" Value="7.2.2 Cập Nhật Điều Chỉnh Lương"></asp:TreeNode>--%>
                                         </asp:TreeNode>
                                     </Nodes>
                                 </asp:TreeView>
@@ -232,7 +232,7 @@
                         </div>
                         <ajaxToolkit:CollapsiblePanelExtender runat="server" BehaviorID="Panel8_CollapsiblePanelExtender" TargetControlID="Panel8" ID="Panel8_CollapsiblePanelExtender" Collapsed="True" SuppressPostBack="False" ExpandControlID="lbtn8" CollapseControlID="lbtn8" CollapsedSize="0" ExpandedSize="-1"></ajaxToolkit:CollapsiblePanelExtender>
 
-                        <div class="list-group">
+                        <%--<div class="list-group">
                             <asp:LinkButton ID="lbtn9" runat="server" CssClass="list-group-item list-group-item-success">9. ĐÀO TẠO</asp:LinkButton>
                             <asp:Panel ID="Panel9" runat="server" CssClass="list-group-item">
                                 <asp:TreeView ID="TreeView12" runat="server" Width="100%" NodeWrap="True" CssClass="table table-responsive">
@@ -249,7 +249,7 @@
                             </asp:Panel>
 
                         </div>
-                        <ajaxToolkit:CollapsiblePanelExtender runat="server" BehaviorID="Panel9_CollapsiblePanelExtender" TargetControlID="Panel9" ID="Panel9_CollapsiblePanelExtender" Collapsed="True" SuppressPostBack="False" ExpandControlID="lbtn9" CollapseControlID="lbtn9" CollapsedSize="0" ExpandedSize="-1"></ajaxToolkit:CollapsiblePanelExtender>
+                        <ajaxToolkit:CollapsiblePanelExtender runat="server" BehaviorID="Panel9_CollapsiblePanelExtender" TargetControlID="Panel9" ID="Panel9_CollapsiblePanelExtender" Collapsed="True" SuppressPostBack="False" ExpandControlID="lbtn9" CollapseControlID="lbtn9" CollapsedSize="0" ExpandedSize="-1"></ajaxToolkit:CollapsiblePanelExtender>--%>
 
                         <div class="list-group">
                             <asp:LinkButton ID="lbtn10" runat="server" CssClass="list-group-item list-group-item-success">10. KHEN THƯỞNG</asp:LinkButton>

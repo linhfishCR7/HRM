@@ -41,6 +41,15 @@ Partial Public Class STAFF
     Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
 
     '''<summary>
+    '''txtEmail control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtEmail As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''MainContent control.
     '''</summary>
     '''<remarks>

@@ -9,7 +9,7 @@
     <asp:Panel ID="panelPhanQuyen" runat="server">
         <div class="list-group mt-5">
             <div class="list-group-item active">
-                QUYỀN CÔNG TY
+                PHÂN HỆ MODULE
             </div>
 
             <div class="list-group-item">

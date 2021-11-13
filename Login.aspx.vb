@@ -7,6 +7,7 @@ Public Class Login
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Session("LoginOK") = False
         Session.RemoveAll()
+        panelError.Visible = False
     End Sub
 
     Protected Sub Login1_Authenticate(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.AuthenticateEventArgs) Handles Login1.Authenticate
@@ -26,7 +27,6 @@ Public Class Login
         Dim t As New DataTable
         da.Fill(t)
         e.Authenticated = t.Rows.Count > 0
-
         Session("LoginOK") = e.Authenticated
         If e.Authenticated Then
             'Set Level cho Session Level

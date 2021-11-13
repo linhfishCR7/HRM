@@ -33,7 +33,7 @@
                         </table>
                         <asp:GridView ID="GridView1" runat="server" Width="100%" HorizontalAlign="Center" OnRowCommand="GridView1_RowCommand"
                             AutoGenerateColumns="False"
-                            DataKeyNames="Username" CssClass="table table-bordered table-responsive" DataSourceID="SqlDataSource1" AllowPaging="True" AllowSorting="true">
+                            DataKeyNames="Username" CssClass="table-rep-plugin" DataSourceID="SqlDataSource1" AllowPaging="True" AllowSorting="true">
                             <Columns>
                                 <asp:ButtonField CommandName="editRecord" ButtonType="Link" HeaderText="Sửa" Text='<i class="fe-edit"></i>' ItemStyle-Width="40px">
                                     <ControlStyle CssClass="btn mauvang btn-xs"></ControlStyle>

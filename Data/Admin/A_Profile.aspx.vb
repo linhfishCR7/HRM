@@ -15,7 +15,7 @@ Public Class A_Profile
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not Session("LoginOK") Then
-            Response.Redirect("A_Login")
+            Response.Redirect("A_Login.aspx")
         End If
         panelPhanQuyen.Visible = True
         panelThongBao.Visible = False

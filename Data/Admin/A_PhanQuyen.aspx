@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Phân Quyền" Language="vb" AutoEventWireup="false" MasterPageFile="Admin.Master" CodeBehind="A_PhanQuyen.aspx.vb" Inherits="HRM.A_PhanQuyen" %>
+﻿<%@ Page Title="Quyền" Language="vb" AutoEventWireup="false" MasterPageFile="Admin.Master" CodeBehind="A_PhanQuyen.aspx.vb" Inherits="HRM.A_PhanQuyen" %>
 
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
@@ -12,7 +12,7 @@
     <asp:Panel ID="panelPhanQuyen" runat="server">
         <div class="list-group mt-5">
             <div class="list-group-item active">
-                PHÂN QUYỀN
+                QUYỀN
             </div>
             <div class="list-group-item">
                 <asp:UpdatePanel ID="upCrudGrid" runat="server">
