@@ -47,6 +47,7 @@
             Panel0.Visible = False
         End If
 
+        lblEmail.Text = Session("Email")
 
     End Sub
 

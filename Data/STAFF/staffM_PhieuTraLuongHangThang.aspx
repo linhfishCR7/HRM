@@ -14,20 +14,20 @@
             QUẢN LÝ PHIẾU TRẢ LƯƠNG
         </div>    
         
-        <div class="list-group-item">
+        <%--<div class="list-group-item">
             <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-primary" draggable="true"><i class=" fas fa-tasks"></i> Menu</button>
                 <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="caret"></span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
-                <%--<ul class="dropdown-menu">
+                <ul class="dropdown-menu">
                     <li><a href="staffM_PhieuTraLuongHangThang.aspx">Quản Lý Phiếu Lương</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="staffR_TongHopTienLuong.aspx">Tổng Hợp Tiền Lương</a></li>                    
-                </ul>--%>
+                </ul>
             </div>
-        </div>    
+        </div>   --%> 
                
         <div class="list-group-item">
             <div class="form-horizontal" role="form">                
@@ -44,7 +44,7 @@
         <div class="list-group-item document">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_TienLuong" Width="100%" DataKeyNames="MaLuong">
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_TienLuong" Width="100%" DataKeyNames="MaLuong">
                 <Columns>         
                     <asp:TemplateField ShowHeader="False">
                         <ItemTemplate>

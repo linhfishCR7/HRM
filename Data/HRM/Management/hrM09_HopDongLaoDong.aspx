@@ -17,7 +17,7 @@
                 <div class="form-group">
                     <asp:Label ID="Label2" runat="server" Text="Phân Loại:" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-2">
-                        <asp:DropDownList ID="cbSearch" runat="server">
+                        <asp:DropDownList ID="cbSearch" CssClass="form-control" runat="server">
                             <asp:ListItem Value="1">Mã Hợp Đồng</asp:ListItem>
                             <asp:ListItem Value="2">Số Hợp Đồng</asp:ListItem>
                             <asp:ListItem Value="3">Mã Nhân Viên</asp:ListItem>
@@ -25,7 +25,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="txtSearch" runat="server" placeholder="Nhập từ khóa cần tìm."></asp:TextBox>
+                        <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Nhập từ khóa cần tìm."></asp:TextBox>
                     </div>
                     <div class="col-md-2">
                         <asp:LinkButton ID="btnSearch" runat="server" CssClass="btn mauxanh"><i class="remixicon-file-search-line"></i> Tìm Kiếm</asp:LinkButton>
@@ -41,7 +41,7 @@
         <div class="list-group-item document">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="gv_HopDongLaoDong" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_HopDongLaoDong" Width="100%">
+                    <asp:GridView ID="gv_HopDongLaoDong" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_HopDongLaoDong" Width="100%">
                         <Columns>
                             <asp:TemplateField ShowHeader="False">
                                 <ItemTemplate>

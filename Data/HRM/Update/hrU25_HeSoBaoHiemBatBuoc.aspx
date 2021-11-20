@@ -9,7 +9,7 @@
     <asp:Panel ID="panelPhanQuyen" runat="server">
         <div class="list-group mt-5">
             <div class="list-group-item active">
-                CẬP NHẬT CHỨC VỤ
+                CẬP NHẬT HỆ SỐ BẢO HIỂM BẮT BUỘC
             </div>
             <div class="list-group-item">
                 <asp:UpdatePanel ID="upCrudGrid" runat="server">

@@ -10,6 +10,8 @@ Public Class hrU03_KyNang
         panelThongBao.Visible = False
         panelError.Visible = False
         lblMaNhanVien.Text = Session("MaNhanVien")
+        lblTenNhanVien.Text = Session("HoLot") + " " + Session("Ten")
+
     End Sub
 
     Protected Sub btnAdd_Click(ByVal sender As Object, ByVal e As EventArgs)

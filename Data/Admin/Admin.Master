@@ -265,15 +265,6 @@
     <!-- init js -->
     <script src="/../../Content/Themes/Minton_green/assets/js/pages/dashboard-1.init.js"></script>
 
-    <!-- Vendor js -->
-    <script src="/../../Content/Themes/Minton_green/assets/js/vendor.min.js"></script>
-
-    <!-- Responsive Table js -->
-    <script src="/../../Content/Themes/Minton_green/assets/libs/rwd-table/rwd-table.min.js"></script>
-
-    <!-- Init js -->
-    <script src="/../../Content/Themes/Minton_green/assets/js/pages/responsive-table.init.js"></script>
-
     <!-- App js -->
     <script src="/../../Content/Themes/Minton_green/assets/js/app.min.js"></script>
 

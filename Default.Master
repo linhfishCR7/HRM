@@ -1,0 +1,330 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Default.master.vb" Inherits="HRM._Default1" %>
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Hệ thống thông tin quản lý doanh nghiệp trực tuyến</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" href="/Content/images/icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/magnific-popup.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/themify-icons.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/nice-select.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/flaticon.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/gijgo.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/animate.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/slick.css">
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/slicknav.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="/Content/Themes/Study4u/css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager2" runat="server"></asp:ScriptManager>
+        <!-- header-start -->
+        <header>
+            <div class="header-area ">
+                <div id="sticky-header" class="main-header-area">
+                    <div class="container-fluid">
+                        <div class="header_bottom_border">
+                            <div class="row align-items-center">
+                                <div class="col-xl-2 col-lg-2">
+                                    <div class="logo">
+                                        <a href="Default.aspx">
+                                            <img src="/Content/images/hrm-small.png" alt="" class="logostudy4u">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="main-menu  d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a class="active" href="Default.aspx"><b>TRANG CHỦ</b></a></li>
+                                                <li><a href="#"><b>GIỚI THIỆU</b></a></li>
+                                                <li><a class="" href="#"><b>HỖ TRỢ</b></a></li>                                                                                               
+                                                <li><a href="#"><b>LIÊN HỆ</b></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                                    <div class="social_wrap d-flex align-items-center justify-content-end">
+                                        <div class="number">
+                                            <p><i class="fa fa-phone"></i>84(256)-928 256</p>
+                                        </div>
+                                        <div class="social_links d-none d-xl-block">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="mobile_menu d-block d-lg-none"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-end -->
+
+        <!-- slider_area_start -->
+        <div class="slider_area">
+            <div class="slider_active owl-carousel">
+                <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-12 col-md-12">
+                                <div class="slider_text text-center">
+                                    <%--<h3>QUẢN LÝ</h3>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <h3>NHÂN SỰ</h3>
+                                    <p></p>--%>
+                                    <a href="#" class="boxed-btn3">Start</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-12 col-md-12">
+                                <%--<div class="slider_text text-center">
+                                    <h3>Book</h3>
+                                    <p>Minh Họa Hình Ảnh</p>
+                                    <a href="#" class="boxed-btn3">Start</a>
+                                </div>--%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_slider  d-flex align-items-center slider_bg_3 overlay">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-12 col-md-12">
+                                <%--<div class="slider_text text-center">
+                                    <h3>Princeton</h3>
+                                    <p>Minh Họa Hình Ảnh</p>
+                                    <a href="#" class="boxed-btn3">Start</a>
+                                </div>
+                            </div>--%>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- slider_area_end -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer class="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-lg-4 ">
+                            <div class="footer_widget">
+                                <div class="footer_logo">
+                                    <a href="#">
+                                        <img src="/Content/images/hrm-small.png" alt="" class="logostudy4u">
+                                    </a>
+                                </div>
+                                <p>
+                                    KDC 148, 3/2 Hưng Lợi
+                                    <br>
+                                    Ninh Kiều, Cần Thơ
+                                    <br>
+                                    <a href="#">+84 67 826 2567</a>
+                                    <br>
+                                    <a href="#">havanlinh@gmail.com</a>
+                                </p>
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-twitter-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-youtube-play"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-6 col-lg-2">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">Công Ty
+                                </h3>
+                                <ul class="links">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Giới Thiệu</a></li>
+                                    <li><a href="#">Hỗ Trợ</a></li>
+                                    <li><a href="#">Liên Hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">Danh Sách Dịch Vụ
+                                </h3>
+                                <ul class="links double_links">
+                                    <li><a href="#">HRM</a></li>
+                                    <li><a href="#">EMS</a></li>
+                                    <li><a href="#">CRM</a></li>
+                                    <li><a href="#">FMS</a></li>
+                                    <li><a href="#">QMS</a></li>
+                                    <li><a href="#">MMS</a></li>
+                                    <li><a href="#">PRM</a></li>
+                                    <li><a href="#">WMS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">Instagram
+                                </h3>
+                                <div class="instagram_feed">
+                                    <div class="single_insta">
+                                        <a href="#">
+                                            <img src="/Content/Themes/Study4u/img/instagram/image_1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="single_insta">
+                                        <a href="#">
+                                            <img src="/Content/Themes/Study4u/img/instagram/image_2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="single_insta">
+                                        <a href="#">
+                                            <img src="/Content/Themes/Study4u/img/instagram/image_3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="single_insta">
+                                        <a href="#">
+                                            <img src="/Content/Themes/Study4u/img/instagram/image_4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="single_insta">
+                                        <a href="#">
+                                            <img src="/Content/Themes/Study4u/img/instagram/image_5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="single_insta">
+                                        <a href="#">
+                                            <img src="/Content/Themes/Study4u/img/instagram/image_6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center">
+                                Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://linhfishcr7.wordpress.com/" target="_blank">LINHFISH</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- link that opens popup -->
+        <!--     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script> -->
+        <!-- JS here -->
+        <script src="/Content/Themes/Study4u/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/popper.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/bootstrap.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/owl.carousel.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/isotope.pkgd.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/ajax-form.js"></script>
+        <script src="/Content/Themes/Study4u/js/waypoints.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/jquery.counterup.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/imagesloaded.pkgd.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/scrollIt.js"></script>
+        <script src="/Content/Themes/Study4u/js/jquery.scrollUp.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/wow.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/nice-select.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/jquery.slicknav.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/jquery.magnific-popup.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/plugins.js"></script>
+        <script src="/Content/Themes/Study4u/js/gijgo.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/slick.min.js"></script>
+
+
+
+        <!--contact js-->
+        <script src="/Content/Themes/Study4u/js/contact.js"></script>
+        <script src="/Content/Themes/Study4u/js/jquery.ajaxchimp.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/jquery.form.js"></script>
+        <script src="/Content/Themes/Study4u/js/jquery.validate.min.js"></script>
+        <script src="/Content/Themes/Study4u/js/mail-script.js"></script>
+
+
+        <script src="/Content/Themes/Study4u/js/main.js"></script>
+        <script>
+            $('#datepicker').datepicker({
+                iconsLibrary: 'fontawesome',
+                icons: {
+                    rightIcon: '<span class="fa fa-caret-down"></span>'
+                }
+            });
+        </script>
+    </form>
+</body>
+</html>

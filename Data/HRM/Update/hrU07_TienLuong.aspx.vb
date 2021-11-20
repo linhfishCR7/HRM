@@ -7,6 +7,11 @@ Public Class hrU07_TienLuong
             Response.Redirect("/Login.aspx")
         End If
         lblMaNhanVien.Text = Session("MaNhanVien")
+        lblTenNhanVien.Text = Session("HoLot") + " " + Session("Ten")
+        UpdatePanel2.Visible = True
+        panelThongBao.Visible = False
+        panelError.Visible = False
+
     End Sub
     'Mở modal thêm dữ liệu
     Protected Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click

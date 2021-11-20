@@ -25,6 +25,14 @@
                         </tr>
                         <tr>
                             <td>
+                                Tên Nhân Viên
+                            </td>
+                            <td>
+                                 <asp:Label ID="lblTenNhanVien" runat="server" Text=""></asp:Label>                                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                 <asp:LinkButton ID="btnAdd" runat="server" CssClass="btn mauxanh" OnClick="btnAdd_Click" CausesValidation="False"><i class="fe-plus-square"></i> Thêm Mới</asp:LinkButton>
                             </td>
                         </tr>
@@ -257,5 +265,11 @@
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:HRMConnectionString %>" SelectCommand="SELECT DISTINCT [HoTen] FROM [vhr_NhanVien]">
         </asp:SqlDataSource>
     </div>
-
+    <asp:Panel ID="panelThongBao" runat="server" Visible="False">
+        <h4 class="alert alert-warning" role="alert">Sorry. You don't authorize to access this page. Please contact your admin.</h4>
+    </asp:Panel>
+    <asp:Panel ID="panelError" runat="server" Visible="True">
+        <h4 class="alert alert-warning" role="alert">
+            <asp:Label ID="lblError" runat="server" Text=""></asp:Label></h4>
+    </asp:Panel>
 </asp:Content>

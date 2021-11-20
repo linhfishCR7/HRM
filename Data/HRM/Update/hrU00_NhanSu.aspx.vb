@@ -227,6 +227,8 @@ Public Class hrU00_NhanSu
         ElseIf (e.CommandName.Equals("selectRecord")) Then
             Dim gvrow As GridViewRow = GridView1.Rows(Index)
             Session("MaNhanVien") = HttpUtility.HtmlDecode(gvrow.Cells(3).Text).ToString()
+            Session("HoLot") = HttpUtility.HtmlDecode(gvrow.Cells(4).Text).ToString()
+            Session("Ten") = HttpUtility.HtmlDecode(gvrow.Cells(5).Text).ToString()
             lblMaNhanVien.Text = Session("MaNhanVien")
             Dim sb As StringBuilder = New StringBuilder()
             sb.Append("<script type='text/javascript'>")

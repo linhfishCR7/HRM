@@ -25,6 +25,14 @@
                             </tr>
                             <tr>
                                 <td>
+                                    Tên Nhân Viên
+                                </td>
+                                <td>
+                                     <asp:Label ID="lblTenNhanVien" runat="server" Text=""></asp:Label>                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <asp:LinkButton ID="btnAdd" runat="server" CssClass="btn mauxanh" ToolTip="Thêm mới" OnClick="btnAdd_Click"><i class="fe-plus-square"></i> New</asp:LinkButton>
                                     
                                 </td>
@@ -42,16 +50,16 @@
                                     <ControlStyle CssClass="btn maudo btn-xs"></ControlStyle>
                                     <ItemStyle Width="40px" />
                                 </asp:ButtonField>
-                                <asp:BoundField DataField="MaChungChi" HeaderText="MaChungChi" SortExpression="MaChungChi" InsertVisible="False" ReadOnly="True"></asp:BoundField>
-                                <asp:BoundField DataField="SoChungChi" HeaderText="SoChungChi" SortExpression="SoChungChi"/>                           
-                                <asp:BoundField DataField="TenChungChi" HeaderText="TenChungChi" SortExpression="TenChungChi"/>
-                                <asp:BoundField DataField="CapBac" HeaderText="CapBac" SortExpression="CapBac"/>
-                                <asp:BoundField DataField="NgayCap" HeaderText="NgayCap" SortExpression="NgayCap"/>
-                                <asp:BoundField DataField="ThoiHan" HeaderText="ThoiHan" SortExpression="ThoiHan" />
-                                <asp:BoundField DataField="DonViCap" HeaderText="DonViCap" SortExpression="DonViCap" />
-                                <asp:BoundField DataField="GhiChu" HeaderText="GhiChu" SortExpression="GhiChu" />
-                                <asp:BoundField DataField="DinhKem" HeaderText="DinhKem" SortExpression="DinhKem" />
-                                <asp:BoundField DataField="MaLoai" HeaderText="MaLoai" SortExpression="MaLoai" />
+                                <asp:BoundField DataField="MaChungChi" HeaderText="Mã Chứng Chỉ" SortExpression="MaChungChi" InsertVisible="False" ReadOnly="True"></asp:BoundField>
+                                <asp:BoundField DataField="SoChungChi" HeaderText="Số Chứng Chỉ" SortExpression="SoChungChi"/>                           
+                                <asp:BoundField DataField="TenChungChi" HeaderText="Tên Chứng Chỉ" SortExpression="TenChungChi"/>
+                                <asp:BoundField DataField="CapBac" HeaderText="Cấp Bậc" SortExpression="CapBac"/>
+                                <asp:BoundField DataField="NgayCap" HeaderText="Ngày Cấp" SortExpression="NgayCap" DataFormatString="{0:MM/dd/yyyy}"/>
+                                <asp:BoundField DataField="ThoiHan" HeaderText="Thời Hạn" SortExpression="ThoiHan" DataFormatString="{0:MM/dd/yyyy}" />
+                                <asp:BoundField DataField="DonViCap" HeaderText="Đơn Vị Cấp" SortExpression="DonViCap" />
+                                <asp:BoundField DataField="GhiChu" HeaderText="Ghi Chú" SortExpression="GhiChu" />
+                                <asp:BoundField DataField="DinhKem" HeaderText="Đính Kèm" SortExpression="DinhKem" />
+                                <asp:BoundField DataField="MaLoai" HeaderText="Mã Loại" SortExpression="MaLoai" />
                             </Columns>
                         </asp:GridView>
                     </ContentTemplate>

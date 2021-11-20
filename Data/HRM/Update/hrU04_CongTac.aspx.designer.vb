@@ -41,6 +41,15 @@ Partial Public Class hrU04_CongTac
     Protected WithEvents lblMaNhanVien As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''lblTenNhanVien control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTenNhanVien As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''btnAdd control.
     '''</summary>
     '''<remarks>
@@ -110,7 +119,7 @@ Partial Public Class hrU04_CongTac
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtMoTaCongViec As Global.CKEditor.NET.CKEditorControl
+    Protected WithEvents txtMoTaCongViec As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''txtNgayBatDau control.
@@ -200,7 +209,7 @@ Partial Public Class hrU04_CongTac
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtMoTaCongViec1 As Global.CKEditor.NET.CKEditorControl
+    Protected WithEvents txtMoTaCongViec1 As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''txtNgayBatDau1 control.

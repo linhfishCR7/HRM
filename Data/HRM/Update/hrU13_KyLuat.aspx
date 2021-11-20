@@ -25,11 +25,19 @@
                         </tr>
                         <tr>
                             <td>
+                                Tên Nhân Viên
+                            </td>
+                            <td>
+                                <asp:Label ID="lblTenNhanVien" runat="server" Text=""></asp:Label>                                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                  <asp:LinkButton ID="btnAdd" runat="server" CssClass="btn mauxanh" ToolTip="Thêm mới" OnClick="btnAdd_Click"><i class="fe-plus-square"></i> New</asp:LinkButton>
                             </td>
                         </tr>
                     </table>
-                    <asp:GridView ID="GridView1" runat="server" OnRowCommand="GridView1_RowCommand" Width="100%" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="MaKyLuat" AllowPaging="True">
+                    <asp:GridView ID="GridView1" runat="server" OnRowCommand="GridView1_RowCommand" Width="100%" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="MaKyLuat" AllowPaging="True">
                         <Columns>
                             <asp:ButtonField CommandName="editRecord" ButtonType="Link" HeaderText="Sửa" Text='<i class="fe-edit"></i>' ItemStyle-Width="40px">
                                 <ControlStyle CssClass="btn mauvang btn-xs"></ControlStyle>
@@ -40,10 +48,10 @@
                                 <ItemStyle Width="40px" />
                             </asp:ButtonField>
                             <asp:BoundField DataField="MaKyLuat" HeaderText="Mã Kỷ Luật" SortExpression="MaKyLuat" InsertVisible="False" ReadOnly="True"></asp:BoundField>
-                            <asp:BoundField DataField="Ngay" HeaderText="Ngày" SortExpression="Ngay"/>
+                            <asp:BoundField DataField="Ngay" HeaderText="Ngày" SortExpression="Ngay" DataFormatString="{0:MM/dd/yyyy}"/>
                             <asp:BoundField DataField="NoiDung" HeaderText="Nội Dung" SortExpression="NoiDung" />
                             <asp:BoundField DataField="HinhThucKyLuat" HeaderText="Hình Thức Kỷ Luật" SortExpression="HinhThucKyLuat" />
-                            <asp:BoundField DataField="ThoiHan" HeaderText="Thời Hạn" SortExpression="ThoiHan" />
+                            <asp:BoundField DataField="ThoiHan" HeaderText="Thời Hạn" SortExpression="ThoiHan" DataFormatString="{0:MM/dd/yyyy}" />
                             <asp:BoundField DataField="DinhKem" HeaderText="Đính Kèm" SortExpression="DinhKem" />
                             <asp:BoundField DataField="GhiChu" HeaderText="Ghi Chú" SortExpression="GhiChu" />
                         </Columns>

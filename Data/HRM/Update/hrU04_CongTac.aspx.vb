@@ -7,6 +7,7 @@ Public Class hrU04_CongTac
             Response.Redirect("/Login.aspx")
         End If
         lblMaNhanVien.Text = Session("MaNhanVien")
+        lblTenNhanVien.Text = Session("HoLot") + " " + Session("Ten")
         panelPhanQuyen.Visible = True
         panelThongBao.Visible = False
         panelError.Visible = False

@@ -16,7 +16,7 @@
         <div class="list-group-item group">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="gv_NhanSu" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource01_NhanSu" Width="1000px" DataKeyNames="MaNhanVien">
+                    <asp:GridView ID="gv_NhanSu" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource01_NhanSu" Width="1200px" DataKeyNames="MaNhanVien">
                         <Columns>
                             <asp:TemplateField ShowHeader="False">
                                 <ItemTemplate>
@@ -60,7 +60,7 @@
             </asp:UpdatePanel>
             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                 <ContentTemplate>
-                    <div class="tab-content">
+                    <div class="tab-content mt-5">
                         <div class="tab-pane active" id="thongtincanhan">
                             <asp:DetailsView ID="DetailsView1" runat="server" CssClass="table table-condensed table-hover" Width="100%" AutoGenerateRows="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="MaNhanVien,MaDanToc,MaQuocTich,MaTrinhDoHocVan,MaTonGiao,MaBoPhan" DataSourceID="SqlDataSource01a_ChiTietNhanSu" ForeColor="Black" GridLines="Horizontal">
                                 <EditRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
@@ -128,7 +128,7 @@
                             </asp:DetailsView>
                         </div>
                         <div class="tab-pane document" id="lienhekhancap">
-                            <asp:GridView ID="gv_LienHeKhanCap" runat="server" Width="120%" AutoGenerateColumns="False" DataSourceID="SqlDataSource02_LienHeKhanCap" DataKeyNames="MaLienHe">
+                            <asp:GridView ID="gv_LienHeKhanCap" runat="server" Width="120%" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource02_LienHeKhanCap" DataKeyNames="MaLienHe">
                                 <Columns>
                                     <asp:BoundField DataField="NguoiLienHe" HeaderText="Người Liên Hệ" SortExpression="NguoiLienHe" />
                                     <asp:BoundField DataField="QuanHe" HeaderText="Quan Hệ" SortExpression="QuanHe" />
@@ -139,7 +139,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="bangcap">
-                            <asp:GridView ID="gv_BangCap" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource03_BangCap" Width="100%">
+                            <asp:GridView ID="gv_BangCap" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-responsive" DataSourceID="SqlDataSource03_BangCap" Width="100%">
                                 <Columns>
                                     <asp:TemplateField HeaderText="Tên Bằng" SortExpression="TenBang">
                                         <ItemTemplate>
@@ -153,7 +153,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="chungchi">
-                            <asp:GridView ID="gv_ChungChi" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource04_ChungChi" Width="100%">
+                            <asp:GridView ID="gv_ChungChi" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource04_ChungChi" Width="100%">
                                 <Columns>
                                     <asp:TemplateField HeaderText="Tên Chứng Chỉ" SortExpression="TenChungChi">
                                         <ItemTemplate>
@@ -171,7 +171,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="kynang">
-                            <asp:GridView ID="gv_KyNang" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource05_KyNang" Width="100%" DataKeyNames="MaKyNang">
+                            <asp:GridView ID="gv_KyNang" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource05_KyNang" Width="100%" DataKeyNames="MaKyNang">
                                 <Columns>
                                     <asp:BoundField DataField="LoaiKyNang" HeaderText="Kỹ Năng" SortExpression="LoaiKyNang" />
                                     <asp:BoundField DataField="KyNang" HeaderText="Mô Tả" SortExpression="KyNang" />
@@ -179,7 +179,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="congtac">
-                            <asp:GridView ID="gv_CongTac" runat="server" Width="1000px" AutoGenerateColumns="False" DataSourceID="SqlDataSource06_CongTac" DataKeyNames="MaChiNhanh,MaBoPhan,MaNhanVien,MaCongTac,MaDanToc,MaTrinhDoHocVan,MaQuocTich,MaTonGiao">
+                            <asp:GridView ID="gv_CongTac" runat="server" CssClass="table table-bordered table-responsive" Width="1000px" AutoGenerateColumns="False" DataSourceID="SqlDataSource06_CongTac" DataKeyNames="MaChiNhanh,MaBoPhan,MaNhanVien,MaCongTac,MaDanToc,MaTrinhDoHocVan,MaQuocTich,MaTonGiao">
                                 <Columns>
                                     <asp:BoundField DataField="ThoiGian" HeaderText="Thời Gian" SortExpression="ThoiGian" />
                                     <asp:BoundField DataField="CongTy" HeaderText="Công Ty" SortExpression="CongTy" />
@@ -195,12 +195,11 @@
                                 </Columns>
                             </asp:GridView>
                         </div>
-
                         <div class="tab-pane document" id="chamcong">
 
                             <div class="row">                               
                                 <div class="col-md-12">
-                                    <asp:GridView ID="gv_ChamCong" runat="server" Width="100%" AutoGenerateColumns="False" DataSourceID="SqlDataSource07_ChamCong">
+                                    <asp:GridView ID="gv_ChamCong" CssClass="table table-bordered table-responsive" runat="server" Width="100%" AutoGenerateColumns="False" DataSourceID="SqlDataSource07_ChamCong">
                                         <Columns>
                                             <asp:BoundField DataField="NgayCong" HeaderText="Ngày Công" SortExpression="NgayCong" DataFormatString="{0:MM/dd/yyyy}" />
                                             <asp:BoundField DataField="Cong" HeaderText="Công" SortExpression="Cong" />
@@ -215,9 +214,8 @@
                             </div>
 
                         </div>
-
                         <div class="tab-pane document" id="phepnam">
-                            <asp:GridView ID="gv_PhepNam" runat="server" Width="800px" AutoGenerateColumns="False" DataSourceID="SqlDataSource08_PhepNam" DataKeyNames="MaPhepNam">
+                            <asp:GridView ID="gv_PhepNam" runat="server" CssClass="table table-bordered table-responsive" Width="800px" AutoGenerateColumns="False" DataSourceID="SqlDataSource08_PhepNam" DataKeyNames="MaPhepNam">
 
                                 <Columns>
                                     <asp:BoundField DataField="MaPhepNam" HeaderText="Mã Phép Năm" InsertVisible="False" ReadOnly="True" SortExpression="MaPhepNam" >
@@ -236,7 +234,7 @@
 
                         </div>
                         <div class="tab-pane document" id="tienluong">
-                            <asp:GridView ID="gv_Luong" runat="server" Width="1500px" AutoGenerateColumns="False" DataSourceID="SqlDataSource09_Luong">
+                            <asp:GridView ID="gv_Luong" runat="server" CssClass="table table-bordered table-responsive" Width="1500px" AutoGenerateColumns="False" DataSourceID="SqlDataSource09_Luong">
                                 <Columns>
                                     <asp:BoundField DataField="Thang" HeaderText="Tháng" />
                                     <asp:BoundField DataField="Nam" HeaderText="Năm" />
@@ -260,7 +258,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="dieuchinhluong">
-                            <asp:GridView ID="gv_DieuChinhLuong" runat="server" Width="100%" AutoGenerateColumns="False" DataSourceID="SqlDataSource10_DieuChinhLuong" DataKeyNames="MaChiNhanh,MaBoPhan,MaNhanVien,MaDieuChinh">
+                            <asp:GridView ID="gv_DieuChinhLuong" runat="server" CssClass="table table-bordered table-responsive" Width="100%" AutoGenerateColumns="False" DataSourceID="SqlDataSource10_DieuChinhLuong" DataKeyNames="MaChiNhanh,MaBoPhan,MaNhanVien,MaDieuChinh">
                                 <Columns>
                                     <asp:BoundField DataField="Ngay" HeaderText="Ngày" SortExpression="Ngay" DataFormatString="{0:MM/dd/yyyy}" />
                                     <asp:BoundField DataField="LuongCoBan" HeaderText="Lương Cơ Bản" SortExpression="LuongCoBan" DataFormatString="{0:#,0.00;(#,0.00)}" />
@@ -270,7 +268,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="hopdong">
-                            <asp:GridView ID="gv_HopDongLaoDong" runat="server" Width="1200px" AutoGenerateColumns="False" DataSourceID="SqlDataSource11_HopDongLaoDong">
+                            <asp:GridView ID="gv_HopDongLaoDong" runat="server" CssClass="table table-bordered table-responsive" Width="1200px" AutoGenerateColumns="False" DataSourceID="SqlDataSource11_HopDongLaoDong">
                                 <Columns>                                    
                                     <asp:BoundField DataField="SoHopDong" HeaderText="Số Hợp Đồng" SortExpression="SoHopDong" />
                                     <asp:BoundField DataField="TenHopDong" HeaderText="Tên Hợp Đồng" SortExpression="TenHopDong" />
@@ -286,7 +284,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="daotao">
-                            <asp:GridView ID="gv_DaoTao" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource12_DaoTao" Width="1200px" DataKeyNames="MaYeuCau">
+                            <asp:GridView ID="gv_DaoTao" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource12_DaoTao" Width="1200px" DataKeyNames="MaYeuCau">
                                 <Columns>
                                     <asp:BoundField DataField="MaYeuCau" HeaderText="Mã Yêu Cầu" SortExpression="MaYeuCau" ReadOnly="True" />
                                     <asp:BoundField DataField="NoiDungDaoTao" HeaderText="Nội Dung Đào Tạo" SortExpression="NoiDungDaoTao" />
@@ -301,7 +299,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="thangtien">
-                            <asp:GridView ID="gv_ThangTien" runat="server" Width="100%" AutoGenerateColumns="False" DataSourceID="SqlDataSource13_ThangTien">
+                            <asp:GridView ID="gv_ThangTien" runat="server" CssClass="table table-bordered table-responsive" Width="100%" AutoGenerateColumns="False" DataSourceID="SqlDataSource13_ThangTien">
                                 <Columns>
                                     <asp:BoundField DataField="Ngay" HeaderText="Ngày" SortExpression="Ngay" DataFormatString="{0:MM/dd/yyyy}" />
                                     <asp:BoundField DataField="TenChucVu" HeaderText="Chức Vụ" SortExpression="TenChucVu" />
@@ -312,7 +310,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="khenthuong">
-                            <asp:GridView ID="gv_Thuong" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource14_Thuong" Width="100%">
+                            <asp:GridView ID="gv_Thuong" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource14_Thuong" Width="100%">
                                 <Columns>
                                     <asp:BoundField DataField="NgayThuong" HeaderText="Ngày Thưởng" SortExpression="NgayThuong" DataFormatString="{0:MM/dd/yyyy}" />
                                     <asp:BoundField DataField="SoTien" HeaderText="Số Tiền" SortExpression="SoTien" DataFormatString="{0:#,0.00;(#,0.00)}" />
@@ -322,7 +320,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="kyluat">
-                            <asp:GridView ID="gv_KyLuat" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource15_KyLuat" Width="960px" DataKeyNames="MaChiNhanh,MaBoPhan,MaNhanVien,MaKyLuat">
+                            <asp:GridView ID="gv_KyLuat" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource15_KyLuat" Width="960px" DataKeyNames="MaChiNhanh,MaBoPhan,MaNhanVien,MaKyLuat">
                                 <Columns>
                                     <asp:BoundField DataField="Ngay" HeaderText="Ngày" SortExpression="Ngay" DataFormatString="{0:MM/dd/yyyy}" />
                                     <asp:BoundField DataField="NoiDung" HeaderText="Nội Dung" SortExpression="NoiDung" />
@@ -333,7 +331,7 @@
                             </asp:GridView>
                         </div>
                         <div class="tab-pane document" id="suckhoe">
-                            <asp:GridView ID="gv_KhamSucKhoe" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource16_SucKhoe" Width="100%" DataKeyNames="MaChiNhanh,MaBoPhan,MaNhanVien,MaSucKhoe">
+                            <asp:GridView ID="gv_KhamSucKhoe" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource16_SucKhoe" Width="100%" DataKeyNames="MaChiNhanh,MaBoPhan,MaNhanVien,MaSucKhoe">
                                 <Columns>
                                     <asp:BoundField DataField="NgayKham" HeaderText="Ngày Khám" SortExpression="NgayKham" DataFormatString="{0:MM/dd/yyyy}" />
                                     <asp:BoundField DataField="NoiDungKham" HeaderText="Nội Dung Khám" SortExpression="NoiDungKham" />

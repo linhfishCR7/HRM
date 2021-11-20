@@ -2,6 +2,7 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
+<%@ Register Namespace="CKFinder" Assembly="CKFinder" TagPrefix="CKFinder" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
@@ -27,6 +28,14 @@
                             </tr>
                             <tr>
                                 <td>
+                                    Tên Nhân Viên
+                                </td>
+                                <td>
+                                     <asp:Label ID="lblTenNhanVien" runat="server" Text=""></asp:Label>                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <asp:LinkButton ID="btnAdd" runat="server" CssClass="btn mauxanh" ToolTip="Thêm mới" OnClick="btnAdd_Click"><i class="fe-plus-square"></i> New</asp:LinkButton>
 
                                 </td>
@@ -48,14 +57,15 @@
                                 <asp:BoundField DataField="ThoiGian" HeaderText="Thời Gian" SortExpression="ThoiGian" DataFormatString="{0:MM/dd/yyyy}" />
                                 <asp:BoundField DataField="CongTy" HeaderText="Công Ty" SortExpression="CongTy" />
                                 <asp:BoundField DataField="ViTri" HeaderText="Vị Trí" SortExpression="ViTri" />
-                                <asp:TemplateField HeaderText="Mô Tả Công Việc" SortExpression="MoTaCongViec">
+                                <asp:BoundField DataField="MoTaCongViec" HeaderText="Mô Tả Công Việc" SortExpression="MoTaCongViec" />
+                                <%--<asp:TemplateField HeaderText="Mô Tả Công Việc" SortExpression="MoTaCongViec">
                                     <EditItemTemplate>
                                         <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("MoTaCongViec") %>'></asp:TextBox>
                                     </EditItemTemplate>
                                     <ItemTemplate>
-                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("MoTaCongViec") %>'></asp:Label>
+                                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("MoTaCongViec") %>'></asp:Label>
                                     </ItemTemplate>
-                                </asp:TemplateField>
+                                </asp:TemplateField>--%>
                                 <asp:BoundField DataField="NgayBatDau" HeaderText="Ngày Bắt Đầu" SortExpression="NgayBatDau" DataFormatString="{0:MM/dd/yyyy}" />
                             </Columns>
                         </asp:GridView>
@@ -108,8 +118,7 @@
                                     <tr>
                                         <td>Mô Tả Công Việc: </td>
                                         <td>
-                                            <CKEditor:CKEditorControl ID="txtMoTaCongViec" Height="100" runat="server"></CKEditor:CKEditorControl>
-
+                                            <asp:TextBox ID="txtMoTaCongViec" CssClass="form-control" runat="server"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -186,8 +195,7 @@
                                     <tr>
                                         <td>Mô Tả Công Việc: </td>
                                         <td>
-                                            <CKEditor:CKEditorControl ID="txtMoTaCongViec1" Height="100" runat="server"></CKEditor:CKEditorControl>
-
+                                            <asp:TextBox ID="txtMoTaCongViec1" CssClass="form-control" runat="server"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>

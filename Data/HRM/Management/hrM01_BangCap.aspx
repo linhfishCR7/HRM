@@ -17,7 +17,7 @@
                 <div class="form-group">
                     <asp:Label ID="Label2" runat="server" Text="Phân Loại:" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-4">
-                        <asp:DropDownList ID="cbSearch" runat="server">
+                        <asp:DropDownList ID="cbSearch" CssClass="form-control" runat="server">
                             <asp:ListItem Selected="True" Value="1">Số Bằng</asp:ListItem>
                             <asp:ListItem Value="2">Tên Bằng</asp:ListItem>
                             <asp:ListItem Value="3">Loại Bằng</asp:ListItem>
@@ -25,7 +25,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="txtSearch" runat="server" placeholder="Nhập từ khóa cần tìm."></asp:TextBox>
+                        <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control"  placeholder="Nhập từ khóa cần tìm."></asp:TextBox>
                     </div>
                     <div class="col-md-2">
                         <asp:LinkButton ID="btnSearch" runat="server" CssClass="btn btn-sm btn-primary"><i class="remixicon-file-search-line"></i> Tìm Kiếm</asp:LinkButton>
@@ -36,7 +36,7 @@
         <div class="list-group-item document">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="gv_BangCap" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_BangCap" Width="100%" DataKeyNames="MaLoai,MaNhanVien,MaBang">
+                    <asp:GridView ID="gv_BangCap" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_BangCap" Width="100%" DataKeyNames="MaLoai,MaNhanVien,MaBang">
                         <Columns>
                             <asp:TemplateField HeaderText="Số Bằng" SortExpression="SoBang">
                                 <ItemTemplate>

@@ -52,34 +52,34 @@
                             <asp:BoundField DataField="TinhTrangHonNhan" HeaderText="Tình Trạng Hôn Nhân" SortExpression="TinhTrangHonNhan" />
                             <asp:BoundField DataField="SoCon" HeaderText="Số Con" SortExpression="SoCon" />
                             <asp:BoundField DataField="SoCMND" HeaderText="Số CMND" SortExpression="SoCMND" />
-                            <asp:BoundField DataField="NgayCap" HeaderText="Ngày Cấp" SortExpression="NgayCap" DataFormatString="{0:MM/dd/yyyy}" />
-                            <asp:BoundField DataField="NoiCap" HeaderText="Nơi Cấp" SortExpression="NoiCap" />
-                            <asp:BoundField DataField="DiaChiThuongTru" HeaderText="Địa Chỉ Thường Trú" SortExpression="DiaChiThuongTru" />
-                            <asp:BoundField DataField="DiaChiTamTru" HeaderText="Địa Chỉ Tạm Trú" SortExpression="DiaChiTamTru" />
-                            <asp:BoundField DataField="ChucVuHienTai" HeaderText="Chức Vụ" SortExpression="ChucVuHienTai" />
-                            <asp:BoundField DataField="NgayVaoLamViec" HeaderText="Ngày Vào Làm Việc" SortExpression="NgayVaoLamViec" DataFormatString="{0:MM/dd/yyyy}" />
-                            <asp:BoundField DataField="NgayKetThucThuViec" HeaderText="Ngày Kết Thúc Thử Việc" SortExpression="NgayKetThucThuViec" DataFormatString="{0:MM/dd/yyyy}" />
-                            <asp:BoundField DataField="NgayKyHopDongLaoDong" HeaderText="Ngày Ký Hợp Đồng" SortExpression="NgayKyHopDongLaoDong" DataFormatString="{0:MM/dd/yyyy}" />
-                            <asp:BoundField DataField="DienThoai" HeaderText="Điện Thoại" SortExpression="DienThoai" />
-                            <asp:BoundField DataField="DiDong" HeaderText="Di Động" SortExpression="DiDong" />
-                            <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                            <asp:BoundField DataField="EmailCaNhan" HeaderText="Email Cá Nhân" SortExpression="EmailCaNhan" />
-                            <asp:BoundField DataField="FaceBook" HeaderText="FaceBook" SortExpression="FaceBook" />
-                            <asp:BoundField DataField="SoBHXH" HeaderText="Số BHXH" SortExpression="SoBHXH" />
-                            <asp:BoundField DataField="MaSoThue" HeaderText="Mã Số Thuế" SortExpression="MaSoThue" />
-                            <asp:BoundField DataField="SoTaiKhoan" HeaderText="Số Tài Khoản" SortExpression="SoTaiKhoan" />
-                            <asp:BoundField DataField="HinhAnh" HeaderText="Hình Ảnh" SortExpression="HinhAnh" />
-                            <asp:BoundField DataField="BoPhanLamViecID" HeaderText="Mã Bộ Phận" SortExpression="BoPhanLamViecID" />
-                            <asp:BoundField DataField="QuocTichID" HeaderText="Mã Quốc Tịch" SortExpression="QuocTichID" />
-                            <asp:BoundField DataField="DanTocID" HeaderText="Mã Dân Tộc" SortExpression="DanTocID" />
-                            <asp:BoundField DataField="TonGiaoID" HeaderText="Mã Tôn Giáo" SortExpression="TonGiaoID" />
-                            <asp:BoundField DataField="TrinhDoHocVanID" HeaderText="Mã Trình Độ Học Vấn" SortExpression="TrinhDoHocVanID" />
-                            <asp:BoundField DataField="ThongBaoTrungTuyen" HeaderText="Thông Báo Tuyển Dụng" SortExpression="ThongBaoTrungTuyen" />
-                            <asp:BoundField DataField="QuyetDinhTuyenDung" HeaderText="Quyết Định Tuyển Dụng" SortExpression="QuyetDinhTuyenDung" />
-                            <asp:BoundField DataField="HoSo" HeaderText="Hồ Sơ" SortExpression="HoSo" />
-                            <asp:BoundField DataField="TinhTrang" HeaderText="Tình Trạng" SortExpression="TinhTrang" />
-                            <asp:BoundField DataField="NgayNghi" HeaderText="Ngày Nghỉ" SortExpression="NgayNghi" DataFormatString="{0:dd/MM/yyyy}" />
-                            <asp:BoundField DataField="MatKhau" HeaderText="Mật Khẩu" SortExpression="MatKhau" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" >
+                            <asp:BoundField DataField="NgayCap" HeaderText="Ngày Cấp" SortExpression="NgayCap" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" DataFormatString="{0:MM/dd/yyyy}" />
+                            <asp:BoundField DataField="NoiCap" HeaderText="Nơi Cấp" SortExpression="NoiCap" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="DiaChiThuongTru" HeaderText="Địa Chỉ Thường Trú" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="DiaChiThuongTru" />
+                            <asp:BoundField DataField="DiaChiTamTru" HeaderText="Địa Chỉ Tạm Trú" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="DiaChiTamTru" />
+                            <asp:BoundField DataField="ChucVuHienTai" HeaderText="Chức Vụ" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="ChucVuHienTai" />
+                            <asp:BoundField DataField="NgayVaoLamViec" HeaderText="Ngày Vào Làm Việc" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="NgayVaoLamViec" DataFormatString="{0:MM/dd/yyyy}" />
+                            <asp:BoundField DataField="NgayKetThucThuViec" HeaderText="Ngày Kết Thúc Thử Việc" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="NgayKetThucThuViec" DataFormatString="{0:MM/dd/yyyy}" />
+                            <asp:BoundField DataField="NgayKyHopDongLaoDong" HeaderText="Ngày Ký Hợp Đồng" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="NgayKyHopDongLaoDong" DataFormatString="{0:MM/dd/yyyy}" />
+                            <asp:BoundField DataField="DienThoai" HeaderText="Điện Thoại" SortExpression="DienThoai" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="DiDong" HeaderText="Di Động" SortExpression="DiDong" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="EmailCaNhan" HeaderText="Email Cá Nhân" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="EmailCaNhan" />
+                            <asp:BoundField DataField="FaceBook" HeaderText="FaceBook" SortExpression="FaceBook" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="SoBHXH" HeaderText="Số BHXH" SortExpression="SoBHXH" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="MaSoThue" HeaderText="Mã Số Thuế" SortExpression="MaSoThue" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="SoTaiKhoan" HeaderText="Số Tài Khoản" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="SoTaiKhoan" />
+                            <asp:BoundField DataField="HinhAnh" HeaderText="Hình Ảnh" SortExpression="HinhAnh" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="BoPhanLamViecID" HeaderText="Mã Bộ Phận" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="BoPhanLamViecID" />
+                            <asp:BoundField DataField="QuocTichID" HeaderText="Mã Quốc Tịch" SortExpression="QuocTichID" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="DanTocID" HeaderText="Mã Dân Tộc" SortExpression="DanTocID" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="TonGiaoID" HeaderText="Mã Tôn Giáo" SortExpression="TonGiaoID" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="TrinhDoHocVanID" HeaderText="Mã Trình Độ Học Vấn" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="TrinhDoHocVanID" />
+                            <asp:BoundField DataField="ThongBaoTrungTuyen" HeaderText="Thông Báo Tuyển Dụng" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="ThongBaoTrungTuyen" />
+                            <asp:BoundField DataField="QuyetDinhTuyenDung" HeaderText="Quyết Định Tuyển Dụng" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" SortExpression="QuyetDinhTuyenDung" />
+                            <asp:BoundField DataField="HoSo" HeaderText="Hồ Sơ" SortExpression="HoSo" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="TinhTrang" HeaderText="Tình Trạng" SortExpression="TinhTrang" ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" />
+                            <asp:BoundField DataField="NgayNghi" HeaderText="Ngày Nghỉ" SortExpression="NgayNghi"  DataFormatString="{0:dd/MM/yyyy}" />
+                            <asp:BoundField DataField="MatKhau" HeaderText="Mật Khẩu" SortExpression="MatKhau"  ItemStyle-CssClass="hidden-col" HeaderStyle-CssClass="hidden-col" >
                             <HeaderStyle CssClass="hidden-col" />
                             <ItemStyle CssClass="hidden-col" />
                             </asp:BoundField>

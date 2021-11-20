@@ -30,7 +30,16 @@ Partial Public Class hrU07_TienLuong
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblMaNhanVien As Global.System.Web.UI.WebControls.Label
-    
+
+    '''<summary>
+    '''lblTenNhanVien control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTenNhanVien As Global.System.Web.UI.WebControls.Label
+
     '''<summary>
     '''btnAdd control.
     '''</summary>
@@ -363,7 +372,7 @@ Partial Public Class hrU07_TienLuong
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnDelete As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''SqlDataSource1 control.
     '''</summary>
@@ -372,4 +381,21 @@ Partial Public Class hrU07_TienLuong
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+    '''<summary>
+    '''panelThongBao control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents panelThongBao As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''panelError control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents panelError As Global.System.Web.UI.WebControls.Panel
 End Class

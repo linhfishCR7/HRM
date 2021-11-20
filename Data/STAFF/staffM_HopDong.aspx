@@ -28,7 +28,7 @@
         <div class="list-group-item document">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_HopDongLaoDong" Width="1200px">
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_HopDongLaoDong" Width="1200px">
                 <Columns>         
                     <asp:TemplateField ShowHeader="False">
                         <ItemTemplate>
