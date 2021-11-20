@@ -17,7 +17,7 @@
                 <div class="form-group">
                     <asp:Label ID="Label3" runat="server" Text="Nhân Viên:" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-10">
-                        <asp:DropDownList ID="cbNhanVien" runat="server" DataSourceID="SqlDataSource2_NhanSu" DataTextField="HoTen" DataValueField="MaNhanVien" AutoPostBack="True">
+                        <asp:DropDownList ID="cbNhanVien" CssClass="form-control" runat="server" DataSourceID="SqlDataSource2_NhanSu" DataTextField="HoTen" DataValueField="MaNhanVien" AutoPostBack="True">
                         </asp:DropDownList>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
         <div class="list-group-item document">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="gv_PhepNam" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_PhepNam" Width="100%" DataKeyNames="MaPhepNam">
+                    <asp:GridView ID="gv_PhepNam" CssClass="table table-bordered table-responsive" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1_PhepNam" Width="100%" DataKeyNames="MaPhepNam">
                         <Columns>
                             <asp:TemplateField ShowHeader="False">
                                 <ItemTemplate>

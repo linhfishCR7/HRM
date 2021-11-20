@@ -7,6 +7,11 @@ Public Class hrU07_TienLuong
             Response.Redirect("/Login.aspx")
         End If
         lblMaNhanVien.Text = Session("MaNhanVien")
+        lblTenNhanVien.Text = Session("HoLot") + " " + Session("Ten")
+        UpdatePanel2.Visible = True
+        panelThongBao.Visible = False
+        panelError.Visible = False
+
     End Sub
     'Mở modal thêm dữ liệu
     Protected Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
@@ -27,7 +32,7 @@ Public Class hrU07_TienLuong
         Dim HeSo As String = txtHeSo.Text
         Dim PhuCap As String = txtPhuCap.Text
         Dim HoTroKhac As String = txtHoTroKhac.Text
-        Dim BaoHiemBatBuoc As String = txtBaoHiemBatBuoc.Text
+        Dim BaoHiemBatBuoc As String = ddlBaoHiemBatBuoc.SelectedValue
         Dim ThueTNCN As String = txtThueTNCN.Text
         Dim TangCa As String = txtTangCa.Text
         Dim Khac As String = txtKhac.Text
@@ -84,11 +89,11 @@ Public Class hrU07_TienLuong
             txtHeSo1.Text = HttpUtility.HtmlDecode(gvrow.Cells(7).Text).ToString().Trim()
             txtPhuCap1.Text = HttpUtility.HtmlDecode(gvrow.Cells(8).Text).ToString().Trim()
             txtHoTroKhac1.Text = HttpUtility.HtmlDecode(gvrow.Cells(9).Text).ToString().Trim()
-            txtBaoHiemBatBuoc1.Text = HttpUtility.HtmlDecode(gvrow.Cells(10).Text).ToString().Trim()
+            ddlBaoHiemBatBuoc1.SelectedValue = HttpUtility.HtmlDecode(gvrow.Cells(10).Text).ToString().Trim()
             txtThueTNCN1.Text = HttpUtility.HtmlDecode(gvrow.Cells(11).Text).ToString().Trim()
             txtTangCa1.Text = HttpUtility.HtmlDecode(gvrow.Cells(12).Text).ToString().Trim()
             txtKhac1.Text = HttpUtility.HtmlDecode(gvrow.Cells(13).Text).ToString().Trim()
-            txtGhiChu1.Text = HttpUtility.HtmlDecode(gvrow.Cells(8).Text).ToString().Trim()
+            txtGhiChu1.Text = HttpUtility.HtmlDecode(gvrow.Cells(14).Text).ToString().Trim()
 
             'lblResult.Visible = False
             Dim sb As StringBuilder = New StringBuilder()
@@ -119,7 +124,7 @@ Public Class hrU07_TienLuong
         Dim HeSo As String = txtHeSo1.Text
         Dim PhuCap As String = txtPhuCap1.Text
         Dim HoTroKhac As String = txtHoTroKhac1.Text
-        Dim BaoHiemBatBuoc As String = txtBaoHiemBatBuoc1.Text
+        Dim BaoHiemBatBuoc As String = ddlBaoHiemBatBuoc1.SelectedValue
         Dim ThueTNCN As String = txtThueTNCN1.Text
         Dim TangCa As String = txtTangCa1.Text
         Dim Khac As String = txtKhac1.Text

@@ -27,6 +27,14 @@
                             </tr>
                             <tr>
                                 <td>
+                                    Tên Nhân Viên
+                                </td>
+                                <td>
+                                     <asp:Label ID="lblTenNhanVien" runat="server" Text=""></asp:Label>                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <asp:LinkButton ID="btnAdd" runat="server" CssClass="btn mauxanh" ToolTip="Thêm mới" OnClick="btnAdd_Click"><i class="fe-plus-square"></i> New</asp:LinkButton>
                                     
                                 </td>

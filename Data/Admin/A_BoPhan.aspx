@@ -17,6 +17,14 @@
                     <ContentTemplate>
                         <table class="table table-active">
                             <tr>
+                                <td>Công Ty</td>
+                                <td>
+                                    <asp:DropDownList ID="cbCongTy" CssClass="form-control" runat="server" DataSourceID="SqlDataSource3_CongTy" DataTextField="TenCongTy" DataValueField="MaCongTy" AutoPostBack="True">
+                                    </asp:DropDownList>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chi Nhánh</td>
                                 <td>
                                     <asp:DropDownList ID="cbChiNhanh" CssClass="form-control" runat="server" DataSourceID="SqlDataSource2_ChiNhanh" DataTextField="ChiNhanh" DataValueField="MaChiNhanh" AutoPostBack="True">
                                     </asp:DropDownList>
@@ -195,7 +203,13 @@
                     <asp:Parameter Name="MaBoPhan" Type="String" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:SqlDataSource ID="SqlDataSource2_ChiNhanh" runat="server" ConnectionString="<%$ ConnectionStrings:HRMConnectionString %>" SelectCommand="SELECT [MaChiNhanh], [ChiNhanh] FROM [hr_ChiNhanh]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource2_ChiNhanh" runat="server" ConnectionString="<%$ ConnectionStrings:HRMConnectionString %>" SelectCommand="SELECT [MaChiNhanh], [ChiNhanh], [MaCongTy] FROM [hr_ChiNhanh] WHERE ([MaCongTy] = @MaCongTy)">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="cbCongTy" Name="MaCongTy" PropertyName="SelectedValue" Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource3_CongTy" runat="server" ConnectionString="<%$ ConnectionStrings:HRMConnectionString %>" SelectCommand="SELECT [MaCongTy], [TenCongTy] FROM [hr_CongTy]"></asp:SqlDataSource>
+
         </div>
 
     </asp:Panel>

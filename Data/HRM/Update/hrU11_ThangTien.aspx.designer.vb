@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class hrU11_ThangTien
-    
+
     '''<summary>
     '''UpdatePanel2 control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents UpdatePanel2 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''lblMaNhanVien control.
     '''</summary>
@@ -30,7 +30,16 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblMaNhanVien As Global.System.Web.UI.WebControls.Label
-    
+
+    '''<summary>
+    '''lblTenNhanVien control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTenNhanVien As Global.System.Web.UI.WebControls.Label
+
     '''<summary>
     '''btnAdd control.
     '''</summary>
@@ -39,7 +48,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnAdd As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''GridView1 control.
     '''</summary>
@@ -48,7 +57,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''upAdd control.
     '''</summary>
@@ -57,7 +66,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents upAdd As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''ddlMaChucVu control.
     '''</summary>
@@ -66,7 +75,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlMaChucVu As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtNgay control.
     '''</summary>
@@ -75,7 +84,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNgay As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtNgay_CalendarExtender control.
     '''</summary>
@@ -84,7 +93,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNgay_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''txtDinhKem control.
     '''</summary>
@@ -93,7 +102,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtDinhKem As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtNoiDung control.
     '''</summary>
@@ -102,7 +111,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNoiDung As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtGhiChu control.
     '''</summary>
@@ -111,7 +120,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtGhiChu As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''btnAddRecord control.
     '''</summary>
@@ -120,7 +129,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnAddRecord As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''UpdatePanel3 control.
     '''</summary>
@@ -129,7 +138,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents UpdatePanel3 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''txtMaThangTien1 control.
     '''</summary>
@@ -138,7 +147,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtMaThangTien1 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ddlMaChucVu1 control.
     '''</summary>
@@ -147,7 +156,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlMaChucVu1 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtNgay1 control.
     '''</summary>
@@ -156,7 +165,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNgay1 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtNgay1_CalendarExtender control.
     '''</summary>
@@ -165,7 +174,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNgay1_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
-    
+
     '''<summary>
     '''txtDinhKem1 control.
     '''</summary>
@@ -174,7 +183,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtDinhKem1 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtNoiDung1 control.
     '''</summary>
@@ -183,7 +192,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNoiDung1 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtGhiChu1 control.
     '''</summary>
@@ -192,7 +201,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtGhiChu1 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''lblResult control.
     '''</summary>
@@ -201,7 +210,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblResult As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''btnSave control.
     '''</summary>
@@ -210,7 +219,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSave As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''upDel control.
     '''</summary>
@@ -219,7 +228,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents upDel As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''hfCode control.
     '''</summary>
@@ -228,7 +237,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents hfCode As Global.System.Web.UI.WebControls.HiddenField
-    
+
     '''<summary>
     '''btnDelete control.
     '''</summary>
@@ -237,7 +246,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnDelete As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''SqlDataSource1 control.
     '''</summary>
@@ -246,7 +255,7 @@ Partial Public Class hrU11_ThangTien
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
-    
+
     '''<summary>
     '''SqlDataSource2 control.
     '''</summary>

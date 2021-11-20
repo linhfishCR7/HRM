@@ -21,7 +21,7 @@ Partial Public Class hrU09_HopDongLaoDong
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents UpdatePanel2 As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''lblMaNhanVien control.
     '''</summary>
@@ -30,7 +30,16 @@ Partial Public Class hrU09_HopDongLaoDong
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblMaNhanVien As Global.System.Web.UI.WebControls.Label
-    
+
+    '''<summary>
+    '''lblTenNhanVien control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTenNhanVien As Global.System.Web.UI.WebControls.Label
+
     '''<summary>
     '''btnAdd control.
     '''</summary>

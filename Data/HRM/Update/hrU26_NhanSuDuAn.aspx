@@ -25,11 +25,19 @@
                         </tr>
                         <tr>
                             <td>
+                                Tên Nhân Viên
+                            </td>
+                            <td>
+                                <asp:Label ID="lblTenNhanVien" runat="server" Text=""></asp:Label>                                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                 <asp:LinkButton ID="btnAdd" runat="server" CssClass="btn mauxanh" OnClick="btnAdd_Click" CausesValidation="False"><i class="fe-plus-square"></i> Thêm Mới</asp:LinkButton>
                             </td>
                         </tr>
                     </table>
-                    <asp:GridView ID="GridView1" runat="server" Width="100%" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="MaSo" AllowPaging="True">
+                    <asp:GridView ID="GridView1" runat="server" Width="100%" AutoGenerateColumns="False" CssClass="table table-bordered table-responsive" DataSourceID="SqlDataSource1" DataKeyNames="MaSo" AllowPaging="True">
                         <Columns>
                             <asp:ButtonField CommandName="selectRecord" ButtonType="Link" HeaderText="Chọn" Text='<i class="fe-list"></i>' ItemStyle-Width="40px">
                                 <ControlStyle CssClass="btn btn-xs maureu" ForeColor="White"></ControlStyle>

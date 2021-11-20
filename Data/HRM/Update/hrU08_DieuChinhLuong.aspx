@@ -22,6 +22,14 @@
                             <td>
                                 <asp:Label ID="lblMaNhanVien" runat="server" Text=""></asp:Label>
                             </td>
+                        </tr
+                        <tr>
+                            <td>
+                                Tên Nhân Viên
+                            </td>
+                            <td>
+                                <asp:Label ID="lblTenNhanVien" runat="server" Text=""></asp:Label>                                    
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -29,7 +37,7 @@
                             </td>
                         </tr>
                     </table>
-                    <asp:GridView ID="GridView1" runat="server" Width="100%" OnRowCommand="GridView1_RowCommand" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="MaDieuChinh" AllowPaging="True">
+                    <asp:GridView ID="GridView1" runat="server" Width="100%" OnRowCommand="GridView1_RowCommand" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-responsive" DataKeyNames="MaDieuChinh" AllowPaging="True">
                         <Columns>
                             <asp:ButtonField CommandName="editRecord" ButtonType="Link" HeaderText="Sửa" Text='<i class="fe-edit"></i>' ItemStyle-Width="40px">
                                 <ControlStyle CssClass="btn btn-xs mauvang" ForeColor="White"></ControlStyle>

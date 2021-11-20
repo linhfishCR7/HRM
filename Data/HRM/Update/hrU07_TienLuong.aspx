@@ -25,11 +25,19 @@
                         </tr>
                         <tr>
                             <td>
+                                Tên Nhân Viên
+                            </td>
+                            <td>
+                                <asp:Label ID="lblTenNhanVien" runat="server" Text=""></asp:Label>                                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                 <asp:LinkButton ID="btnAdd" runat="server" CssClass="btn mauxanh" OnClick="btnAdd_Click" CausesValidation="False"><i class="fe-plus-square"></i> Thêm Mới</asp:LinkButton>
                             </td>
                         </tr>
                     </table>
-                    <asp:GridView ID="GridView1" runat="server" Width="100%" OnRowCommand="GridView1_RowCommand" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="MaLuong" AllowPaging="True">
+                    <asp:GridView ID="GridView1" CssClass="table table-bordered table-responsive" runat="server" Width="100%" OnRowCommand="GridView1_RowCommand" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="MaLuong" AllowPaging="True">
                         <Columns>
                             <asp:ButtonField CommandName="editRecord" ButtonType="Link" HeaderText="Sửa" Text='<i class="fe-edit"></i>' ItemStyle-Width="40px">
                                 <ControlStyle CssClass="btn btn-xs mauvang" ForeColor="White"></ControlStyle>
@@ -40,17 +48,17 @@
                                 <ItemStyle Width="40px" />
                             </asp:ButtonField>
                             <asp:BoundField DataField="MaLuong" HeaderText="Mã Lương" SortExpression="MaLuong" InsertVisible="False" ReadOnly="True"></asp:BoundField>
-                            <asp:BoundField DataField="Ngay" HeaderText="Ngày" SortExpression="Ngay" />
+                            <asp:BoundField DataField="Ngay" HeaderText="Ngày" SortExpression="Ngay" DataFormatString="{0:MM/dd/yyyy}" />
                             <asp:BoundField DataField="GioCongChuan" HeaderText="Giờ Công Chuẩn" SortExpression="GioCongChuan" />
-                            <asp:BoundField DataField="GioCongThucTe" HeaderText="Giờ Công Thục Tế" SortExpression="GioCongThucTe" />
-                            <asp:BoundField DataField="LuongCoBan" HeaderText="Luowgn Cơ bản" SortExpression="LuongCoBan" DataFormatString="{0:#,0.00;(#,0.00)}" />
-                            <asp:BoundField DataField="HeSo" HeaderText="Hệ Số" SortExpression="HeSo" />
-                            <asp:BoundField DataField="PhuCap" HeaderText="Phụ Cấp" SortExpression="PhuCap" />
-                            <asp:BoundField DataField="HoTroKhac" HeaderText="Hỗ Trợ Khác" SortExpression="HoTroKhac" />
-                            <asp:BoundField DataField="BaoHiemBatBuoc" HeaderText="Bảo Hiểm Bắc Buộc" SortExpression="BaoHiemBatBuoc" />
-                            <asp:BoundField DataField="ThueTNCN" HeaderText="Thuế TNCN" SortExpression="ThueTNCN" />
-                            <asp:BoundField DataField="TangCa" HeaderText="Tăng Ca" SortExpression="TangCa" />
-                            <asp:BoundField DataField="Khac" HeaderText="Khác" SortExpression="Khac" />
+                            <asp:BoundField DataField="GioCongThucTe" HeaderText="Giờ Công Thực Tế" SortExpression="GioCongThucTe" />
+                            <asp:BoundField DataField="LuongCoBan" HeaderText="Lương Cơ bản" SortExpression="LuongCoBan" DataFormatString="{0:#,0.00;(#,0.00)}" />
+                            <asp:BoundField DataField="HeSo" HeaderText="Hệ Số" SortExpression="HeSo" DataFormatString="{0:#,0.00;(#,0.00)}" />
+                            <asp:BoundField DataField="PhuCap" HeaderText="Phụ Cấp" SortExpression="PhuCap" DataFormatString="{0:#,0.00;(#,0.00)}" />
+                            <asp:BoundField DataField="HoTroKhac" HeaderText="Hỗ Trợ Khác" SortExpression="HoTroKhac" DataFormatString="{0:#,0.00;(#,0.00)}"/>
+                            <asp:BoundField DataField="BaoHiemBatBuoc" HeaderText="Bảo Hiểm Bắc Buộc" SortExpression="BaoHiemBatBuoc"  />
+                            <asp:BoundField DataField="ThueTNCN" HeaderText="Thuế TNCN" SortExpression="ThueTNCN" DataFormatString="{0:#,0.00;(#,0.00)}" />
+                            <asp:BoundField DataField="TangCa" HeaderText="Tăng Ca" SortExpression="TangCa" DataFormatString="{0:#,0.00;(#,0.00)}" />
+                            <asp:BoundField DataField="Khac" HeaderText="Khác" SortExpression="Khac" DataFormatString="{0:#,0.00;(#,0.00)}" />
                             <asp:BoundField DataField="GhiChu" HeaderText="Ghi Chú" SortExpression="GhiChu" />
                         </Columns>
                     </asp:GridView>
@@ -86,63 +94,63 @@
                                     <tr>
                                         <td>Giờ Công Chuẩn:</td>
                                         <td>
-                                            <asp:TextBox ID="txtGioCongChuan" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtGioCongChuan" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td>Giờ Công Thực Tế:</td>
                                         <td>
-                                            <asp:TextBox ID="txtGioCongThucTe" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtGioCongThucTe" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Lương Cơ Bản:</td>
                                         <td>
-                                            <asp:TextBox ID="txtLuongCoBan" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtLuongCoBan" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Hệ Số:</td>
                                         <td>
-                                            <asp:TextBox ID="txtHeSo" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtHeSo" runat="server">1</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Phụ Cấp:</td>
                                         <td>
-                                            <asp:TextBox ID="txtPhuCap" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtPhuCap" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td>Hỗ Trợ Khác:</td>
                                         <td>
-                                            <asp:TextBox ID="txtHoTroKhac" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtHoTroKhac" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Bảo Hiểm Bắc Buộc:</td>
                                         <td>
-                                            <asp:TextBox ID="txtBaoHiemBatBuoc" runat="server"></asp:TextBox>
+                                            <asp:DropDownList ID="ddlBaoHiemBatBuoc" CssClass="form-control" runat="server" DataSourceID="SqlDataSource2" DataTextField="HeSo" DataValueField="HeSo"></asp:DropDownList>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Thuế TNCN:</td>
                                         <td>
-                                            <asp:TextBox ID="txtThueTNCN" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtThueTNCN" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Tăng Ca:</td>
                                         <td>
-                                            <asp:TextBox ID="txtTangCa" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtTangCa" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Khác:</td>
                                         <td>
-                                            <asp:TextBox ID="txtKhac" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtKhac" runat="server">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -233,7 +241,7 @@
                                     <tr>
                                         <td>Bảo Hiểm Bắc Buộc:</td>
                                         <td>
-                                            <asp:TextBox ID="txtBaoHiemBatBuoc1" runat="server"></asp:TextBox>
+                                            <asp:DropDownList ID="ddlBaoHiemBatBuoc1" CssClass="form-control" runat="server" DataSourceID="SqlDataSource2" DataTextField="HeSo" DataValueField="HeSo"></asp:DropDownList>
                                         </td>
                                     </tr>
                                     <tr>
@@ -358,8 +366,15 @@
                 <asp:Parameter Name="MaLuong" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-    </div>
-    <div class="row">
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:HRMConnectionString %>" SelectCommand="SELECT * FROM [hr_HeSoBaoHiemBatBuoc]"></asp:SqlDataSource>
+
     </div>
 
+    <asp:Panel ID="panelThongBao" runat="server" Visible="False">
+        <h4 class="alert alert-warning" role="alert">Sorry. You don't authorize to access this page. Please contact your admin.</h4>
+    </asp:Panel>
+    <asp:Panel ID="panelError" runat="server" Visible="True">
+        <h4 class="alert alert-warning" role="alert">
+            <asp:Label ID="lblError" runat="server" Text=""></asp:Label></h4>
+    </asp:Panel>
 </asp:Content>

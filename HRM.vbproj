@@ -77,11 +77,14 @@
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -1489,6 +1492,363 @@
     <Content Include="Content\Themes\Minton_green\ui-tabs-accordions.html" />
     <Content Include="Content\Themes\Minton_green\ui-typography.html" />
     <Content Include="Content\Themes\Minton_green\widgets.html" />
+    <Content Include="Content\Themes\Study4u\about.html" />
+    <Content Include="Content\Themes\Study4u\blog.html" />
+    <Content Include="Content\Themes\Study4u\contact.html" />
+    <Content Include="Content\Themes\Study4u\css\animate.css" />
+    <Content Include="Content\Themes\Study4u\css\bootstrap.min.css" />
+    <Content Include="Content\Themes\Study4u\css\flaticon.css" />
+    <Content Include="Content\Themes\Study4u\css\font-awesome.min.css" />
+    <Content Include="Content\Themes\Study4u\css\gijgo.css" />
+    <Content Include="Content\Themes\Study4u\css\jquery-ui.css" />
+    <Content Include="Content\Themes\Study4u\css\magnific-popup.css" />
+    <Content Include="Content\Themes\Study4u\css\nice-select.css" />
+    <Content Include="Content\Themes\Study4u\css\owl.carousel.min.css" />
+    <Content Include="Content\Themes\Study4u\css\slick.css" />
+    <Content Include="Content\Themes\Study4u\css\slicknav.css" />
+    <Content Include="Content\Themes\Study4u\css\style.css" />
+    <Content Include="Content\Themes\Study4u\css\theme-default.css" />
+    <Content Include="Content\Themes\Study4u\css\themify-icons.css" />
+    <Content Include="Content\Themes\Study4u\destination_details.html" />
+    <Content Include="Content\Themes\Study4u\doc\css\font-awesome.min.css" />
+    <Content Include="Content\Themes\Study4u\doc\css\main.css" />
+    <Content Include="Content\Themes\Study4u\doc\css\normalize.min.css" />
+    <Content Include="Content\Themes\Study4u\doc\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Themes\Study4u\doc\img\logo.png" />
+    <Content Include="Content\Themes\Study4u\doc\index.html" />
+    <Content Include="Content\Themes\Study4u\doc\js\custom.js" />
+    <Content Include="Content\Themes\Study4u\doc\js\jquery-1.11.0.min.js" />
+    <Content Include="Content\Themes\Study4u\doc\js\jquery.nav.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shAutoloader.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushAS3.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushBash.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushCpp.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushCSharp.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushCss.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushDelphi.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushDiff.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushErlang.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushGroovy.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushJava.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushJScript.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushPerl.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushPhp.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushPlain.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushPython.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushRuby.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushSass.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushScala.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushSql.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushVb.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shBrushXml.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\scripts\shLegacy.js" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shCore.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shCoreDefault.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shCoreDjango.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shCoreEclipse.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shCoreEmacs.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shCoreMidnight.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shCoreRDark.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shThemeDefault.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shThemeDjango.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shThemeEclipse.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shThemeEmacs.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shThemeMidnight.css" />
+    <Content Include="Content\Themes\Study4u\doc\syntax-highlighter\styles\shThemeRDark.css" />
+    <Content Include="Content\Themes\Study4u\elements.html" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-brands-400.svg" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-regular-400.svg" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-solid-900.svg" />
+    <Content Include="Content\Themes\Study4u\fonts\flaticon.css" />
+    <Content Include="Content\Themes\Study4u\fonts\Flaticon.svg" />
+    <Content Include="Content\Themes\Study4u\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Themes\Study4u\fonts\gijgo-material.svg" />
+    <Content Include="Content\Themes\Study4u\fonts\themify.svg" />
+    <Content Include="Content\Themes\Study4u\img\about\1.png" />
+    <Content Include="Content\Themes\Study4u\img\about\2.png" />
+    <Content Include="Content\Themes\Study4u\img\about\cambridge-89754_1280.jpg" />
+    <Content Include="Content\Themes\Study4u\img\about\university-of-chicago-4164784_1280.jpg" />
+    <Content Include="Content\Themes\Study4u\img\about\university-of-chicago-4164784_1920.jpg" />
+    <Content Include="Content\Themes\Study4u\img\banner\banner.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\banner2.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\banner3.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\bradcam.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\bradcam2.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\bradcam3.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\bradcam4.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\Cambridge.jpg" />
+    <Content Include="Content\Themes\Study4u\img\banner\destination.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\girl.jpg" />
+    <Content Include="Content\Themes\Study4u\img\banner\library.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\newsletter.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\oxford-university-m-e1417728349560-1600x587.jpg" />
+    <Content Include="Content\Themes\Study4u\img\banner\Oxfore.jpg" />
+    <Content Include="Content\Themes\Study4u\img\banner\Princeton.jpg" />
+    <Content Include="Content\Themes\Study4u\img\banner\reading.jpg" />
+    <Content Include="Content\Themes\Study4u\img\banner\testmonial.png" />
+    <Content Include="Content\Themes\Study4u\img\banner\undraw_book_lover_mkck.svg" />
+    <Content Include="Content\Themes\Study4u\img\banner\undraw_memory_storage_reh0.svg" />
+    <Content Include="Content\Themes\Study4u\img\banner\undraw_social_girl_-562-b.svg" />
+    <Content Include="Content\Themes\Study4u\img\banner\video.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\author.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\bg_1.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\bg_2.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\bg_3.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\bg_5.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\blog_1.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\blog_2.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\blog_3.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\blog_4.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\course-1.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\course-2.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\course-3.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\course-4.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\course-5.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\course-6.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\course-7.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\course-8.jpg" />
+    <Content Include="Content\Themes\Study4u\img\blog\learn_about_bg.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\single_blog_1.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\single_blog_2.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\single_blog_3.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\single_blog_4.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\single_blog_5.png" />
+    <Content Include="Content\Themes\Study4u\img\blog\slide_thumb_1.png" />
+    <Content Include="Content\Themes\Study4u\img\book.jpg" />
+    <Content Include="Content\Themes\Study4u\img\comment\comment_1.png" />
+    <Content Include="Content\Themes\Study4u\img\comment\comment_2.png" />
+    <Content Include="Content\Themes\Study4u\img\comment\comment_3.png" />
+    <Content Include="Content\Themes\Study4u\img\creative_mind\1.png" />
+    <Content Include="Content\Themes\Study4u\img\destination\1.png" />
+    <Content Include="Content\Themes\Study4u\img\destination\2.png" />
+    <Content Include="Content\Themes\Study4u\img\destination\3.png" />
+    <Content Include="Content\Themes\Study4u\img\destination\4.png" />
+    <Content Include="Content\Themes\Study4u\img\destination\5.png" />
+    <Content Include="Content\Themes\Study4u\img\destination\6.png" />
+    <Content Include="Content\Themes\Study4u\img\destination\America.jpg" />
+    <Content Include="Content\Themes\Study4u\img\destination\Canada.jpg" />
+    <Content Include="Content\Themes\Study4u\img\destination\France.jpg" />
+    <Content Include="Content\Themes\Study4u\img\destination\Italy.jpg" />
+    <Content Include="Content\Themes\Study4u\img\destination\Russia.jpg" />
+    <Content Include="Content\Themes\Study4u\img\destination\Singapore.jpg" />
+    <Content Include="Content\Themes\Study4u\img\details-img\1.png" />
+    <Content Include="Content\Themes\Study4u\img\details-img\2.png" />
+    <Content Include="Content\Themes\Study4u\img\details-img\details_banner.png" />
+    <Content Include="Content\Themes\Study4u\img\elements\a.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\a2.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\d.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\disabled-check.png" />
+    <Content Include="Content\Themes\Study4u\img\elements\disabled-radio.png" />
+    <Content Include="Content\Themes\Study4u\img\elements\f1.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\f2.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\f3.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\f4.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\f5.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\f6.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\f7.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\f8.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\g1.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\g2.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\g3.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\g4.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\g5.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\g6.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\g7.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\g8.jpg" />
+    <Content Include="Content\Themes\Study4u\img\elements\primary-check.png" />
+    <Content Include="Content\Themes\Study4u\img\elements\primary-radio.png" />
+    <Content Include="Content\Themes\Study4u\img\elements\success-check.png" />
+    <Content Include="Content\Themes\Study4u\img\elements\success-radio.png" />
+    <Content Include="Content\Themes\Study4u\img\favicon.png" />
+    <Content Include="Content\Themes\Study4u\img\footer_logo.png" />
+    <Content Include="Content\Themes\Study4u\img\icohat.png" />
+    <Content Include="Content\Themes\Study4u\img\instagram\1.png" />
+    <Content Include="Content\Themes\Study4u\img\instagram\2.png" />
+    <Content Include="Content\Themes\Study4u\img\instagram\3.png" />
+    <Content Include="Content\Themes\Study4u\img\instagram\4.png" />
+    <Content Include="Content\Themes\Study4u\img\instagram\5.png" />
+    <Content Include="Content\Themes\Study4u\img\instagram\6.png" />
+    <Content Include="Content\Themes\Study4u\img\instagram\image_1.jpg" />
+    <Content Include="Content\Themes\Study4u\img\instagram\image_2.jpg" />
+    <Content Include="Content\Themes\Study4u\img\instagram\image_3.jpg" />
+    <Content Include="Content\Themes\Study4u\img\instagram\image_4.jpg" />
+    <Content Include="Content\Themes\Study4u\img\instagram\image_5.jpg" />
+    <Content Include="Content\Themes\Study4u\img\instagram\image_6.jpg" />
+    <Content Include="Content\Themes\Study4u\img\logo.ico" />
+    <Content Include="Content\Themes\Study4u\img\logo.jpg" />
+    <Content Include="Content\Themes\Study4u\img\maytinh.jpg" />
+    <Content Include="Content\Themes\Study4u\img\phongcanh.jfif" />
+    <Content Include="Content\Themes\Study4u\img\place\1.png" />
+    <Content Include="Content\Themes\Study4u\img\place\2.png" />
+    <Content Include="Content\Themes\Study4u\img\place\3.png" />
+    <Content Include="Content\Themes\Study4u\img\place\4.png" />
+    <Content Include="Content\Themes\Study4u\img\place\5.png" />
+    <Content Include="Content\Themes\Study4u\img\place\6.png" />
+    <Content Include="Content\Themes\Study4u\img\place\cambridge.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\columbia.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\h1.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\h2.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\h3.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\h4.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\h5.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\h6.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\h7.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\h8.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\harvard.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\oxford.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\san-jose-state.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\stanford.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\university-of-chicago.jpg" />
+    <Content Include="Content\Themes\Study4u\img\place\yale.jpg" />
+    <Content Include="Content\Themes\Study4u\img\post\next.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_1.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_10.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_2.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_3.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_4.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_5.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_6.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_7.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_8.png" />
+    <Content Include="Content\Themes\Study4u\img\post\post_9.png" />
+    <Content Include="Content\Themes\Study4u\img\post\preview.png" />
+    <Content Include="Content\Themes\Study4u\img\prise\1.png" />
+    <Content Include="Content\Themes\Study4u\img\prise\2.png" />
+    <Content Include="Content\Themes\Study4u\img\prise\3.png" />
+    <Content Include="Content\Themes\Study4u\img\property\1.png" />
+    <Content Include="Content\Themes\Study4u\img\property\2.png" />
+    <Content Include="Content\Themes\Study4u\img\property\3.png" />
+    <Content Include="Content\Themes\Study4u\img\property\4.png" />
+    <Content Include="Content\Themes\Study4u\img\property\5.png" />
+    <Content Include="Content\Themes\Study4u\img\property\6.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\0_r8BR-G.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\119781.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\151659238692.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\207.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\300x300.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\40155.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\4e05cc2b9908bd326657f917f5c8d849_400x400.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\635619645658797500.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\7264056.gif" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\ambrose-logo-tagline%402x.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\American_University_Logo.svg_.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\aum.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\blanchet_catholic_logo.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\Boca-Newspaper-FAU-Logo.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\bodwell.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\Braemar-College-Logo.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\CenterStackedBlueDigital_RGB-logo.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\Columbia_International_College_logo.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\ConcordiaUniversityChicago_logo-e1455833297675.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\conestoga.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\CSLA Logo Alt %281%29.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\du-hoc-canada-chuong-trinh-chuyen-tiep-dai-hoc-columbia-college-vancouver.gif" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\elca_logo_1_0.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\FairmontPrivate_Logo.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\Fanshawe_College_Logo_vecotrized.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\image.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\JMU-seal-purple.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\lcs_logo.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\loadImages.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\logo %281%29.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\logo %282%29.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\logo-vert-uml_tcm18-54197.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\logo.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\ls.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\mainlogo.gif" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\maxresdefault-1024x576.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\mcc.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\new-logo.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\niagara-college-canada.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\North-Island-College.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\o.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\oap_ucf.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\osu_trans.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\saint_anthony%283%29.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\SCDSB_logo-770x385.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\SouthSeattleCollegeBlueBlackLogo-1.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\TeMWEheR_400x400.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\The-Northwest-School.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\thompson-rivers-university-tru.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\uillinois-logo.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\umass2.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\unnamed.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\usc-logo-jpg-1507292619.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\viu_1.jpg" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\WID_open-graph.png" />
+    <Content Include="Content\Themes\Study4u\img\SchoolLogo\Đại-học-ADELPHI.jpg" />
+    <Content Include="Content\Themes\Study4u\img\service\about.png" />
+    <Content Include="Content\Themes\Study4u\img\STUDY4U.jpg" />
+    <Content Include="Content\Themes\Study4u\img\subduhoc\00.jpg" />
+    <Content Include="Content\Themes\Study4u\img\subduhoc\00_m.jpg" />
+    <Content Include="Content\Themes\Study4u\img\svg_icon\1.svg" />
+    <Content Include="Content\Themes\Study4u\img\svg_icon\2.svg" />
+    <Content Include="Content\Themes\Study4u\img\svg_icon\3.svg" />
+    <Content Include="Content\Themes\Study4u\img\svg_icon\book-2022464.svg" />
+    <Content Include="Content\Themes\Study4u\img\svg_icon\books-2247434.svg" />
+    <Content Include="Content\Themes\Study4u\img\svg_icon\boy-1300242.svg" />
+    <Content Include="Content\Themes\Study4u\img\svg_icon\boy-34619.svg" />
+    <Content Include="Content\Themes\Study4u\img\svg_icon\quote.svg" />
+    <Content Include="Content\Themes\Study4u\img\team\1.png" />
+    <Content Include="Content\Themes\Study4u\img\team\2.png" />
+    <Content Include="Content\Themes\Study4u\img\team\3.png" />
+    <Content Include="Content\Themes\Study4u\img\testmonial\author.png" />
+    <Content Include="Content\Themes\Study4u\img\trip\1.png" />
+    <Content Include="Content\Themes\Study4u\img\trip\2.png" />
+    <Content Include="Content\Themes\Study4u\img\trip\3.png" />
+    <Content Include="Content\Themes\Study4u\img\tuvankhachhang.png" />
+    <Content Include="Content\Themes\Study4u\img\undraw_co_workers_re_1i6i.svg" />
+    <Content Include="Content\Themes\Study4u\img\undraw_education_f8ru.svg" />
+    <Content Include="Content\Themes\Study4u\img\undraw_feeling_proud_qne1.svg" />
+    <Content Include="Content\Themes\Study4u\img\undraw_operating_system_re_iqsc.svg" />
+    <Content Include="Content\Themes\Study4u\img\undraw_product_iteration_kjok.svg" />
+    <Content Include="Content\Themes\Study4u\img\undraw_quitting_time_dm-8-t.svg" />
+    <Content Include="Content\Themes\Study4u\img\undraw_spreadsheet_re_cn18.svg" />
+    <Content Include="Content\Themes\Study4u\img\vanphong.jpeg" />
+    <Content Include="Content\Themes\Study4u\img\works\1.png" />
+    <Content Include="Content\Themes\Study4u\img\works\2.png" />
+    <Content Include="Content\Themes\Study4u\img\works\3.png" />
+    <Content Include="Content\Themes\Study4u\img\works\4.png" />
+    <Content Include="Content\Themes\Study4u\index.html" />
+    <Content Include="Content\Themes\Study4u\js\ajax-form.js" />
+    <Content Include="Content\Themes\Study4u\js\bootstrap.min.js" />
+    <Content Include="Content\Themes\Study4u\js\contact.js" />
+    <Content Include="Content\Themes\Study4u\js\gijgo.min.js" />
+    <Content Include="Content\Themes\Study4u\js\imagesloaded.pkgd.min.js" />
+    <Content Include="Content\Themes\Study4u\js\isotope.pkgd.min.js" />
+    <Content Include="Content\Themes\Study4u\js\jquery-ui.min.js" />
+    <Content Include="Content\Themes\Study4u\js\jquery.ajaxchimp.min.js" />
+    <Content Include="Content\Themes\Study4u\js\jquery.counterup.min.js" />
+    <Content Include="Content\Themes\Study4u\js\jquery.form.js" />
+    <Content Include="Content\Themes\Study4u\js\jquery.magnific-popup.min.js" />
+    <Content Include="Content\Themes\Study4u\js\jquery.scrollUp.min.js" />
+    <Content Include="Content\Themes\Study4u\js\jquery.slicknav.min.js" />
+    <Content Include="Content\Themes\Study4u\js\jquery.validate.min.js" />
+    <Content Include="Content\Themes\Study4u\js\mail-script.js" />
+    <Content Include="Content\Themes\Study4u\js\main.js" />
+    <Content Include="Content\Themes\Study4u\js\nice-select.min.js" />
+    <Content Include="Content\Themes\Study4u\js\owl.carousel.min.js" />
+    <Content Include="Content\Themes\Study4u\js\plugins.js" />
+    <Content Include="Content\Themes\Study4u\js\popper.min.js" />
+    <Content Include="Content\Themes\Study4u\js\range.js" />
+    <Content Include="Content\Themes\Study4u\js\scrollIt.js" />
+    <Content Include="Content\Themes\Study4u\js\slick.min.js" />
+    <Content Include="Content\Themes\Study4u\js\vendor\jquery-1.12.4.min.js" />
+    <Content Include="Content\Themes\Study4u\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Content\Themes\Study4u\js\waypoints.min.js" />
+    <Content Include="Content\Themes\Study4u\js\wow.min.js" />
+    <Content Include="Content\Themes\Study4u\main.html" />
+    <Content Include="Content\Themes\Study4u\memory.html" />
+    <Content Include="Content\Themes\Study4u\single-blog.html" />
+    <Content Include="Content\Themes\Study4u\travel_destination.html" />
     <Content Include="Data\Admin\A_Admin.aspx" />
     <Content Include="Data\Admin\A_BoPhan.aspx" />
     <Content Include="Data\Admin\A_ChiNhanh.aspx" />
@@ -1516,7 +1876,32 @@
     <Content Include="Data\HRM\Management\hrM07_DaoTao.aspx" />
     <Content Include="Data\HRM\Management\hrM08_NhanSuCongTy.aspx" />
     <Content Include="Data\HRM\Management\hrM09_HopDongLaoDong.aspx" />
+    <Content Include="Data\HRM\Report\hrR01a_BangCap.aspx" />
     <Content Include="Data\HRM\Report\hrR01_BangCap.aspx" />
+    <Content Include="Data\HRM\Report\hrR02_ChamCong.aspx" />
+    <Content Include="Data\HRM\Report\hrR03a_ChungChi.aspx" />
+    <Content Include="Data\HRM\Report\hrR03_ChungChi.aspx" />
+    <Content Include="Data\HRM\Report\hrR04_CongTac.aspx" />
+    <Content Include="Data\HRM\Report\hrR05_DanhSachNhanSu.aspx" />
+    <Content Include="Data\HRM\Report\hrR06_DanhSachNhanSuNghiViec.aspx" />
+    <Content Include="Data\HRM\Report\hrR07a_PhieuYeuCauDaoTao.aspx" />
+    <Content Include="Data\HRM\Report\hrR07b_PhieuKiemSoatDaoTao.aspx" />
+    <Content Include="Data\HRM\Report\hrR07_DaoTao.aspx" />
+    <Content Include="Data\HRM\Report\hrR08_DieuChinhLuong.aspx" />
+    <Content Include="Data\HRM\Report\hrR09a_HopDongCaNhan.aspx" />
+    <Content Include="Data\HRM\Report\hrR09_HopDongLaoDong.aspx" />
+    <Content Include="Data\HRM\Report\hrR10_KhamSucKhoe.aspx" />
+    <Content Include="Data\HRM\Report\hrR11_KhenThuong.aspx" />
+    <Content Include="Data\HRM\Report\hrR12_KyLuat.aspx" />
+    <Content Include="Data\HRM\Report\hrR14_NgayVaoLamViec.aspx" />
+    <Content Include="Data\HRM\Report\hrR16a_PhieuBaoNghiPhep.aspx" />
+    <Content Include="Data\HRM\Report\hrR16_NghiPhep.aspx" />
+    <Content Include="Data\HRM\Report\hrR17_Profile.aspx" />
+    <Content Include="Data\HRM\Report\hrR19a_CV.aspx" />
+    <Content Include="Data\HRM\Report\hrR20_ThangTien.aspx" />
+    <Content Include="Data\HRM\Report\hrR21_TienLuong.aspx" />
+    <Content Include="Data\HRM\Report\hrR22_TongHopChamCong.aspx" />
+    <Content Include="Data\HRM\Report\hrR23_TongHopTienLuong.aspx" />
     <Content Include="Data\HRM\Update\hr00_Upload.aspx" />
     <Content Include="Data\HRM\Update\hrU00_NhanSu.aspx" />
     <Content Include="Data\HRM\Update\hrU00_ThongTinLienHeKhanCap.aspx" />
@@ -1546,8 +1931,21 @@
     <Content Include="Data\HRM\Update\hrU25_HeSoBaoHiemBatBuoc.aspx" />
     <Content Include="Data\HRM\Update\hrU26_NhanSuDuAn.aspx" />
     <Content Include="Data\STAFF\staffLogin.aspx" />
+    <Content Include="Data\STAFF\staffM_CV.aspx" />
+    <Content Include="Data\STAFF\staffM_HopDong.aspx" />
+    <Content Include="Data\STAFF\staffM_NhanSu.aspx" />
+    <Content Include="Data\STAFF\staffM_PhepNam.aspx" />
+    <Content Include="Data\STAFF\staffM_PhieuTraLuongHangThang.aspx" />
+    <Content Include="Data\STAFF\staffR_BangChamCong.aspx" />
+    <Content Include="Data\STAFF\staffR_DanhMucChamCong.aspx" />
+    <Content Include="Data\STAFF\staffR_DanhMucPhepNam.aspx" />
+    <Content Include="Data\STAFF\staffR_HopDong.aspx" />
+    <Content Include="Data\STAFF\staffR_PhieuBaoNghiPhep.aspx" />
+    <Content Include="Data\STAFF\staffR_PhieuLuong.aspx" />
+    <Content Include="Data\STAFF\staffR_TongHopTienLuong.aspx" />
     <Content Include="Data\STAFF\staffU_ChamCong.aspx" />
     <Content Include="Data\STAFF\staffU_DoiMatKhau.aspx" />
+    <Content Include="Data\STAFF\staffU_PhepNam.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -1577,11 +1975,22 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dataSet\ChamCong.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChamCong.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dataSet\dsHRM.Designer.vb">
       <DependentUpon>dsHRM.vb</DependentUpon>
     </Compile>
     <Compile Include="dataSet\dsHRM.vb">
       <DependentUpon>dsHRM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataSet\dsWM.Designer.vb">
+      <DependentUpon>dsWM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dataSet\dsWM.vb">
+      <DependentUpon>dsWM.xsd</DependentUpon>
     </Compile>
     <Compile Include="Data\Admin\Admin.Master.designer.vb">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -1793,11 +2202,186 @@
       <DependentUpon>hrM09_HopDongLaoDong.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Data\HRM\Report\hrR01a_BangCap.aspx.designer.vb">
+      <DependentUpon>hrR01a_BangCap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR01a_BangCap.aspx.vb">
+      <DependentUpon>hrR01a_BangCap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Data\HRM\Report\hrR01_BangCap.aspx.designer.vb">
       <DependentUpon>hrR01_BangCap.aspx</DependentUpon>
     </Compile>
     <Compile Include="Data\HRM\Report\hrR01_BangCap.aspx.vb">
       <DependentUpon>hrR01_BangCap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR02_ChamCong.aspx.designer.vb">
+      <DependentUpon>hrR02_ChamCong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR02_ChamCong.aspx.vb">
+      <DependentUpon>hrR02_ChamCong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR03a_ChungChi.aspx.designer.vb">
+      <DependentUpon>hrR03a_ChungChi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR03a_ChungChi.aspx.vb">
+      <DependentUpon>hrR03a_ChungChi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR03_ChungChi.aspx.designer.vb">
+      <DependentUpon>hrR03_ChungChi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR03_ChungChi.aspx.vb">
+      <DependentUpon>hrR03_ChungChi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR04_CongTac.aspx.designer.vb">
+      <DependentUpon>hrR04_CongTac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR04_CongTac.aspx.vb">
+      <DependentUpon>hrR04_CongTac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR05_DanhSachNhanSu.aspx.designer.vb">
+      <DependentUpon>hrR05_DanhSachNhanSu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR05_DanhSachNhanSu.aspx.vb">
+      <DependentUpon>hrR05_DanhSachNhanSu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR06_DanhSachNhanSuNghiViec.aspx.designer.vb">
+      <DependentUpon>hrR06_DanhSachNhanSuNghiViec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR06_DanhSachNhanSuNghiViec.aspx.vb">
+      <DependentUpon>hrR06_DanhSachNhanSuNghiViec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07a_PhieuYeuCauDaoTao.aspx.designer.vb">
+      <DependentUpon>hrR07a_PhieuYeuCauDaoTao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07a_PhieuYeuCauDaoTao.aspx.vb">
+      <DependentUpon>hrR07a_PhieuYeuCauDaoTao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07b_PhieuKiemSoatDaoTao.aspx.designer.vb">
+      <DependentUpon>hrR07b_PhieuKiemSoatDaoTao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07b_PhieuKiemSoatDaoTao.aspx.vb">
+      <DependentUpon>hrR07b_PhieuKiemSoatDaoTao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07_DaoTao.aspx.designer.vb">
+      <DependentUpon>hrR07_DaoTao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR07_DaoTao.aspx.vb">
+      <DependentUpon>hrR07_DaoTao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR08_DieuChinhLuong.aspx.designer.vb">
+      <DependentUpon>hrR08_DieuChinhLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR08_DieuChinhLuong.aspx.vb">
+      <DependentUpon>hrR08_DieuChinhLuong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR09a_HopDongCaNhan.aspx.designer.vb">
+      <DependentUpon>hrR09a_HopDongCaNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR09a_HopDongCaNhan.aspx.vb">
+      <DependentUpon>hrR09a_HopDongCaNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR09_HopDongLaoDong.aspx.designer.vb">
+      <DependentUpon>hrR09_HopDongLaoDong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR09_HopDongLaoDong.aspx.vb">
+      <DependentUpon>hrR09_HopDongLaoDong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR10_KhamSucKhoe.aspx.designer.vb">
+      <DependentUpon>hrR10_KhamSucKhoe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR10_KhamSucKhoe.aspx.vb">
+      <DependentUpon>hrR10_KhamSucKhoe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR11_KhenThuong.aspx.designer.vb">
+      <DependentUpon>hrR11_KhenThuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR11_KhenThuong.aspx.vb">
+      <DependentUpon>hrR11_KhenThuong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR12_KyLuat.aspx.designer.vb">
+      <DependentUpon>hrR12_KyLuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR12_KyLuat.aspx.vb">
+      <DependentUpon>hrR12_KyLuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR14_NgayVaoLamViec.aspx.designer.vb">
+      <DependentUpon>hrR14_NgayVaoLamViec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR14_NgayVaoLamViec.aspx.vb">
+      <DependentUpon>hrR14_NgayVaoLamViec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR16a_PhieuBaoNghiPhep.aspx.designer.vb">
+      <DependentUpon>hrR16a_PhieuBaoNghiPhep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR16a_PhieuBaoNghiPhep.aspx.vb">
+      <DependentUpon>hrR16a_PhieuBaoNghiPhep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR16_NghiPhep.aspx.designer.vb">
+      <DependentUpon>hrR16_NghiPhep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR16_NghiPhep.aspx.vb">
+      <DependentUpon>hrR16_NghiPhep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR17_Profile.aspx.designer.vb">
+      <DependentUpon>hrR17_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR17_Profile.aspx.vb">
+      <DependentUpon>hrR17_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR19a_CV.aspx.designer.vb">
+      <DependentUpon>hrR19a_CV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR19a_CV.aspx.vb">
+      <DependentUpon>hrR19a_CV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR20_ThangTien.aspx.designer.vb">
+      <DependentUpon>hrR20_ThangTien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR20_ThangTien.aspx.vb">
+      <DependentUpon>hrR20_ThangTien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR21_TienLuong.aspx.designer.vb">
+      <DependentUpon>hrR21_TienLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR21_TienLuong.aspx.vb">
+      <DependentUpon>hrR21_TienLuong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR22_TongHopChamCong.aspx.designer.vb">
+      <DependentUpon>hrR22_TongHopChamCong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR22_TongHopChamCong.aspx.vb">
+      <DependentUpon>hrR22_TongHopChamCong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR23_TongHopTienLuong.aspx.designer.vb">
+      <DependentUpon>hrR23_TongHopTienLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HRM\Report\hrR23_TongHopTienLuong.aspx.vb">
+      <DependentUpon>hrR23_TongHopTienLuong.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Data\HRM\Update\hr00_Upload.aspx.designer.vb">
@@ -2017,6 +2601,90 @@
       <DependentUpon>staffLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Data\STAFF\staffM_CV.aspx.designer.vb">
+      <DependentUpon>staffM_CV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_CV.aspx.vb">
+      <DependentUpon>staffM_CV.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_HopDong.aspx.designer.vb">
+      <DependentUpon>staffM_HopDong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_HopDong.aspx.vb">
+      <DependentUpon>staffM_HopDong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_NhanSu.aspx.designer.vb">
+      <DependentUpon>staffM_NhanSu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_NhanSu.aspx.vb">
+      <DependentUpon>staffM_NhanSu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_PhepNam.aspx.designer.vb">
+      <DependentUpon>staffM_PhepNam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_PhepNam.aspx.vb">
+      <DependentUpon>staffM_PhepNam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_PhieuTraLuongHangThang.aspx.designer.vb">
+      <DependentUpon>staffM_PhieuTraLuongHangThang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffM_PhieuTraLuongHangThang.aspx.vb">
+      <DependentUpon>staffM_PhieuTraLuongHangThang.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_BangChamCong.aspx.designer.vb">
+      <DependentUpon>staffR_BangChamCong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_BangChamCong.aspx.vb">
+      <DependentUpon>staffR_BangChamCong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_DanhMucChamCong.aspx.designer.vb">
+      <DependentUpon>staffR_DanhMucChamCong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_DanhMucChamCong.aspx.vb">
+      <DependentUpon>staffR_DanhMucChamCong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_DanhMucPhepNam.aspx.designer.vb">
+      <DependentUpon>staffR_DanhMucPhepNam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_DanhMucPhepNam.aspx.vb">
+      <DependentUpon>staffR_DanhMucPhepNam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_HopDong.aspx.designer.vb">
+      <DependentUpon>staffR_HopDong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_HopDong.aspx.vb">
+      <DependentUpon>staffR_HopDong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_PhieuBaoNghiPhep.aspx.designer.vb">
+      <DependentUpon>staffR_PhieuBaoNghiPhep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_PhieuBaoNghiPhep.aspx.vb">
+      <DependentUpon>staffR_PhieuBaoNghiPhep.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_PhieuLuong.aspx.designer.vb">
+      <DependentUpon>staffR_PhieuLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_PhieuLuong.aspx.vb">
+      <DependentUpon>staffR_PhieuLuong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_TongHopTienLuong.aspx.designer.vb">
+      <DependentUpon>staffR_TongHopTienLuong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffR_TongHopTienLuong.aspx.vb">
+      <DependentUpon>staffR_TongHopTienLuong.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Data\STAFF\staffU_ChamCong.aspx.designer.vb">
       <DependentUpon>staffU_ChamCong.aspx</DependentUpon>
     </Compile>
@@ -2031,11 +2699,25 @@
       <DependentUpon>staffU_DoiMatKhau.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Data\STAFF\staffU_PhepNam.aspx.designer.vb">
+      <DependentUpon>staffU_PhepNam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\STAFF\staffU_PhepNam.aspx.vb">
+      <DependentUpon>staffU_PhepNam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.vb">
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.vb">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.vb">
+      <DependentUpon>Default.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Error.aspx.designer.vb">
@@ -2103,7 +2785,40 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\HRM\hrR01a_BangCap.rdlc" />
     <EmbeddedResource Include="Report\HRM\hrR01_BangCap.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR02_ChamCong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR03a_ChungChi.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR03_ChungChi.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR04_CongTac.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR05_DanhSachNhanSu.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR06_DanhSachNhanSuNghiViec.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR07a_PhieuYeuCauDaoTao.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR07b_PhieuKiemSoatDaoTao.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR07_DaoTao.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR08_DieuChinhLuong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR09a_HopDongCaNhan.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR09_HopDong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR10_KhamSucKhoe.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR11_KhenThuong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR12_KyLuat.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR15_NgayVaoLamViec.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR16a_PhieuBaoNghiPhep.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR16_NghiPhep.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR17_Profile.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR19a_CV.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR20_ThangTien.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR21_TienLuong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR22_TongHopChamCong.rdlc" />
+    <EmbeddedResource Include="Report\HRM\hrR23_TongHopTienLuong.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_BaoCaoCongViec.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_DanhMucChamCong.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_DanhMucCongViec.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_DanhMucPhepNam.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_HopDong.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_PhieuLuong.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_TinhTrangCongViec.rdlc" />
+    <EmbeddedResource Include="Report\STAFF\staffR_TongHopTienLuong.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BulkFolder\DuAn.xlsx" />
@@ -2191,10 +2906,96 @@
     <Content Include="dataSet\dsHRM.xsc">
       <DependentUpon>dsHRM.xsd</DependentUpon>
     </Content>
+    <Content Include="dataSet\ChamCong.xsc">
+      <DependentUpon>ChamCong.xsd</DependentUpon>
+    </Content>
+    <Content Include="Content\Themes\Study4u\css\style.map" />
+    <Content Include="Content\Themes\Study4u\css\theme-default.map" />
+    <Content Include="Content\Themes\Study4u\doc\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Themes\Study4u\doc\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Themes\Study4u\doc\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Themes\Study4u\doc\fonts\FontAwesome.otf" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-brands-400.eot" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-brands-400.ttf" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-brands-400.woff" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-brands-400.woff2" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-regular-400.eot" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-regular-400.ttf" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-regular-400.woff" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-regular-400.woff2" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-solid-900.eot" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-solid-900.ttf" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-solid-900.woff" />
+    <Content Include="Content\Themes\Study4u\fonts\fa-solid-900.woff2" />
+    <Content Include="Content\Themes\Study4u\fonts\Flaticon.eot" />
+    <Content Include="Content\Themes\Study4u\fonts\Flaticon.ttf" />
+    <Content Include="Content\Themes\Study4u\fonts\Flaticon.woff" />
+    <Content Include="Content\Themes\Study4u\fonts\Flaticon.woff2" />
+    <Content Include="Content\Themes\Study4u\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Themes\Study4u\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Themes\Study4u\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Themes\Study4u\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Themes\Study4u\fonts\FontAwesome.otf" />
+    <Content Include="Content\Themes\Study4u\fonts\gijgo-material.eot" />
+    <Content Include="Content\Themes\Study4u\fonts\gijgo-material.ttf" />
+    <Content Include="Content\Themes\Study4u\fonts\gijgo-material.woff" />
+    <Content Include="Content\Themes\Study4u\fonts\themify.eot" />
+    <Content Include="Content\Themes\Study4u\fonts\themify.ttf" />
+    <Content Include="Content\Themes\Study4u\fonts\themify.woff" />
+    <Content Include="Content\Themes\Study4u\scss\style.scss" />
+    <Content Include="Content\Themes\Study4u\scss\theme-default.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_about.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_blog.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_blog_part.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_bradcam.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_btn.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_contact.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_contact_action.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_counter.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_destination.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_elements.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_extend.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_footer.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_header.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_mixins.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_newsletter.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_offers.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_popular_place.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_responsive.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_section_title.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_service.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_slick-nav.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_slider.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_team.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_testmonial.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_travel_variation.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_varriable.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_video.scss" />
+    <Content Include="Content\Themes\Study4u\scss\_where_to_go.scss" />
+    <None Include="dataSet\ChamCong.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChamCong.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="dataSet\ChamCong.xss">
+      <DependentUpon>ChamCong.xsd</DependentUpon>
+    </Content>
     <None Include="dataSet\dsHRM.xsd" />
     <Content Include="dataSet\dsHRM.xss">
       <DependentUpon>dsHRM.xsd</DependentUpon>
     </Content>
+    <Content Include="dataSet\dsWM.xsc">
+      <DependentUpon>dsWM.xsd</DependentUpon>
+    </Content>
+    <None Include="dataSet\dsWM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWM1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="dataSet\dsWM.xss">
+      <DependentUpon>dsWM.xsd</DependentUpon>
+    </Content>
+    <Content Include="Default.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -2216,6 +3017,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Report\Admin\" />
     <Folder Include="Templates\files\" />
     <Folder Include="Templates\flash\" />
     <Folder Include="Templates\_thumbs\Files\" />

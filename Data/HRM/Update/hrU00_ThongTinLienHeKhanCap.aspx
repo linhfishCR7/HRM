@@ -18,7 +18,7 @@
                         <table class="table table-active">
                             <tr>
                                 <td>
-                                    <asp:DropDownList ID="cbNhanSu" CssClass="form-control" runat="server" DataSourceID="SqlDataSource_NhanSu" DataTextField="HoTen" DataValueField="MaNhanVien" AutoPostBack="True">
+                                    <asp:DropDownList ID="cbNhanSu" Enabled="false" CssClass="form-control" runat="server" DataSourceID="SqlDataSource_NhanSu" DataTextField="HoTen" DataValueField="MaNhanVien" AutoPostBack="True">
                                     </asp:DropDownList>
                                 </td>
                             </tr>

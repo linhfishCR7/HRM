@@ -65,5 +65,8 @@
     <div class="row">
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HRMConnectionString %>" SelectCommand="SELECT [MaCongTy], [TenCongTy] FROM [hr_CongTy]"></asp:SqlDataSource>
     </div>
-
+    <asp:Panel ID="panelError" runat="server" Visible="True">
+        <h4 class="alert alert-warning" role="alert">
+            <asp:Label ID="lblError" runat="server" Text=""></asp:Label></h4>
+    </asp:Panel>
 </asp:Content>

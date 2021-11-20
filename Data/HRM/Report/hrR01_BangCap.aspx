@@ -8,26 +8,31 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="list-group">
-        <div class="list-group-item list-group-item-success">
-            DANH SÁCH BẰNG CẤP
+    <asp:Panel ID="panel" runat="server">
+        <div class="list-group">
+            <div class="list-group-item list-group-item-success">
+                DANH SÁCH BẰNG CẤP
+            </div>
+
+            <div class="list-group-item" style="height: 1000px">
+            <rsweb:ReportViewer ID="rpvReport" runat="server" Height="100%" Width="1011" BackColor="LightBlue"
+                BorderColor="LightBlue" InternalBorderColor="DarkGray" SplitterBackColor="LightPink" ToolBarItemBorderColor="LightBlue" ToolBarItemHoverBackColor="LightGreen">
+                    <LocalReport ReportPath="Report\HRM\hrR01_BangCap.rdlc" ReportEmbeddedResource="HRM.hrR01_BangCap.rdlc" EnableExternalImages="True">
+                        <DataSources>
+                            <rsweb:ReportDataSource DataSourceId="ObjectDataSource1" Name="dsBangCap" />
+                        </DataSources>
+                    </LocalReport>
+
+                </rsweb:reportviewer>
+            </div>
+            <div>
+                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetDataByMaCongTy" TypeName="HRM.dsHRMTableAdapters.vhr_BangCapTableAdapter">
+                    <SelectParameters>
+                        <asp:SessionParameter Name="MaCongTy" SessionField="MaCongTy" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+            </div>
         </div>
-
-        <div class="list-group-item">
-            <rsweb:reportviewer ID="rpvReport" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="100%">
-                <LocalReport ReportPath="Report\HRM\hrR01_BangCap.rdlc" ReportEmbeddedResource="HRM.hrR01_BangCap.rdlc" EnableExternalImages="True">
-                    <DataSources>
-                        <rsweb:ReportDataSource DataSourceId="ObjectDataSource1" Name="dsBangCap" />
-                    </DataSources>
-                </LocalReport>
-
-            </rsweb:reportviewer>
-            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetDataByMaCongTy" TypeName="HRM.dsHRMTableAdapters.vhr_BangCapTableAdapter">
-                <SelectParameters>
-                    <asp:SessionParameter Name="MaCongTy" SessionField="MaCongTy" Type="String" />
-                </SelectParameters>
-            </asp:ObjectDataSource>
-        </div>
-    </div>
-
+    </asp:Panel>
 </asp:Content>
+

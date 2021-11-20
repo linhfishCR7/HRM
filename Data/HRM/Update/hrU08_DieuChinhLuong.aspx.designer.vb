@@ -50,6 +50,15 @@ Partial Public Class hrU08_DieuChinhLuong
     Protected WithEvents lblMaNhanVien As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''lblTenNhanVien control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTenNhanVien As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''lblResult control.
     '''</summary>
     '''<remarks>

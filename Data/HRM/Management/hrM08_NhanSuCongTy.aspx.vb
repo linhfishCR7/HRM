@@ -29,7 +29,19 @@ Public Class hrM08_NhanSuCongTy
                         WHERE (hr_ChiNhanh.MaCongTy = @MaCongTy) AND (TinhTrang like N'%" + txtSearch.Text.ToString() + "%')"
             SqlDataSource01_NhanSu.SelectCommand = Search
         End If
-
+        If cbSearch.SelectedValue = "4" Then
+            Search = "SELECT hr_NhanVien.MaNhanVien, hr_NhanVien.HoLot, hr_BoPhanLamViec.TenBoPhan, hr_NhanVien.Ten, hr_NhanVien.DiDong, hr_NhanVien.Email, hr_NhanVien.BoPhanLamViecID, hr_ChiNhanh.MaCongTy
+                        FROM   hr_NhanVien INNER JOIN hr_BoPhanLamViec ON hr_NhanVien.BoPhanLamViecID = hr_BoPhanLamViec.MaBoPhan INNER JOIN hr_ChiNhanh ON hr_BoPhanLamViec.MaChiNhanh = hr_ChiNhanh.MaChiNhanh
+                        WHERE (hr_ChiNhanh.MaCongTy = @MaCongTy) AND (TenBoPhan like N'%" + txtSearch.Text.ToString() + "%')"
+            SqlDataSource01_NhanSu.SelectCommand = Search
+        End If
+        If cbSearch.SelectedValue = "5" Then
+            Search = "SELECT hr_NhanVien.MaNhanVien, hr_TrinhDoHocVan.TrinhDoHocVan, hr_NhanVien.HoLot, hr_BoPhanLamViec.TenBoPhan, hr_NhanVien.Ten, hr_NhanVien.DiDong, hr_NhanVien.Email, hr_NhanVien.BoPhanLamViecID, hr_ChiNhanh.MaCongTy
+                        FROM   hr_NhanVien INNER JOIN hr_BoPhanLamViec ON hr_NhanVien.BoPhanLamViecID = hr_BoPhanLamViec.MaBoPhan INNER JOIN hr_ChiNhanh ON hr_BoPhanLamViec.MaChiNhanh = hr_ChiNhanh.MaChiNhanh
+                        INNER JOIN hr_TrinhDoHocVan ON hr_TrinhDoHocVan.MaTrinhDoHocVan = hr_NhanVien.TrinhDoHocVanID
+                        WHERE (hr_ChiNhanh.MaCongTy = @MaCongTy) AND (TrinhDoHocVan like N'%" + txtSearch.Text.ToString() + "%')"
+            SqlDataSource01_NhanSu.SelectCommand = Search
+        End If
     End Sub
     Protected Sub GridView1_DataBound(sender As Object, e As EventArgs) Handles gv_NhanSu.DataBound
         Try

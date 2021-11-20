@@ -8,7 +8,7 @@ Public Class hrR01_BangCap
             Response.Redirect("/Login.aspx")
         End If
         If Not Me.IsPostBack Then
-            Dim imagePath As String = New Uri(Server.MapPath("~/images/Logo.jpg")).AbsoluteUri
+            Dim imagePath As String = New Uri(Server.MapPath("~/Content/images/hrm-small.png")).AbsoluteUri
             Dim parameter As New ReportParameter("Logo", imagePath)
             rpvReport.LocalReport.SetParameters(parameter)
             rpvReport.LocalReport.Refresh()

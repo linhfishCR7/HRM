@@ -19,7 +19,7 @@
                 <div class="form-group">
                     <asp:Label ID="Label2" runat="server" Text="Phân Loại:" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-4">
-                        <asp:DropDownList ID="cbSearch" runat="server">
+                        <asp:DropDownList ID="cbSearch" CssClass="form-control"  runat="server">
                             <asp:ListItem Selected="True" Value="1">Số Chứng Chỉ</asp:ListItem>
                             <asp:ListItem Value="2">Tên Chứng Chỉ</asp:ListItem>
                             <asp:ListItem Value="3">Loại Chứng Chỉ</asp:ListItem>
@@ -27,7 +27,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="txtSearch" runat="server" placeholder="Nhập từ khóa cần tìm."></asp:TextBox>
+                        <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control"  placeholder="Nhập từ khóa cần tìm."></asp:TextBox>
                     </div>
                     <div class="col-md-2">
                         <asp:LinkButton ID="btnSearch" runat="server" CssClass="btn btn-sm btn-primary"><i class="remixicon-file-search-line"></i> Tìm Kiếm</asp:LinkButton>
@@ -38,7 +38,7 @@
         <div class="list-group-item document">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="gv_ChungChi" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource_ChungChi" Width="1500px" DataKeyNames="MaNhanVien,MaLoai,MaChungChi,MaBoPhan,MaChiNhanh">
+                    <asp:GridView ID="gv_ChungChi" runat="server" CssClass="table table-bordered table-responsive" AutoGenerateColumns="False" DataSourceID="SqlDataSource_ChungChi" Width="1500px" DataKeyNames="MaNhanVien,MaLoai,MaChungChi,MaBoPhan,MaChiNhanh">
                         <Columns>
                             <asp:TemplateField HeaderText="Số Chứng Chỉ" SortExpression="SoChungChi">
                                 <EditItemTemplate>
