@@ -17,7 +17,28 @@
         <div class="list-group-item active">
             CẬP NHẬT NHÂN SỰ
         </div>
-
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <asp:DropDownList ID="cbSearch" CssClass="form-control" runat="server">
+                        <asp:ListItem Selected="True" Value="1">Mã Nhân Viên</asp:ListItem>
+                        <asp:ListItem Value="2">Tên</asp:ListItem>
+                        <asp:ListItem Value="3">Tình Trạng</asp:ListItem>
+                        <asp:ListItem Value="4">Bộ Phận</asp:ListItem>
+                        <asp:ListItem Value="5">Trình Độ Học Vấn</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Nhập từ khóa cần tìm."></asp:TextBox>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <asp:LinkButton ID="btnSearch" runat="server" CssClass="btn mauxanh"><i class="mdi mdi-account-search"></i> Tìm Kiếm</asp:LinkButton>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <asp:LinkButton ID="btnRefesh" runat="server" CssClass="btn maureu"><i class="mdi mdi-refresh"></i> Refresh</asp:LinkButton>
+                </div>
+            </div>            
+        </div>
         <div class="list-group-item document">
             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                 <ContentTemplate>

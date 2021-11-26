@@ -1,4 +1,4 @@
-﻿Imports System.Text
+﻿Imports System.Data.SqlClient
 Public Class hrU00_NhanSu
     Inherits System.Web.UI.Page
 
@@ -363,5 +363,52 @@ Public Class hrU00_NhanSu
                 ScriptManager.RegisterStartupScript(Me, [GetType](), "showalert", "alert('Vui lòng kiểm tra lại.');", True)
             End Try
         End If
+    End Sub
+
+    Protected Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+        Dim cmd As New SqlCommand
+        Dim Search As String
+        If cbSearch.SelectedValue = "1" Then
+            Search = "SELECT hr_NhanVien.*, hr_ChiNhanh.MaCongTy
+                        FROM   hr_NhanVien INNER JOIN hr_BoPhanLamViec ON hr_NhanVien.BoPhanLamViecID = hr_BoPhanLamViec.MaBoPhan INNER JOIN hr_ChiNhanh ON hr_BoPhanLamViec.MaChiNhanh = hr_ChiNhanh.MaChiNhanh
+                        WHERE (hr_ChiNhanh.MaCongTy = @MaCongTy) AND (MaNhanVien like N'%" + txtSearch.Text.ToString() + "%')"
+            SqlDataSource1_NhanSu.SelectCommand = Search
+        End If
+        If cbSearch.SelectedValue = "2" Then
+            Search = "SELECT hr_NhanVien.*, hr_ChiNhanh.MaCongTy
+                        FROM   hr_NhanVien INNER JOIN hr_BoPhanLamViec ON hr_NhanVien.BoPhanLamViecID = hr_BoPhanLamViec.MaBoPhan INNER JOIN hr_ChiNhanh ON hr_BoPhanLamViec.MaChiNhanh = hr_ChiNhanh.MaChiNhanh
+                        WHERE (hr_ChiNhanh.MaCongTy = @MaCongTy) AND (Ten like N'%" + txtSearch.Text.ToString() + "%')"
+            SqlDataSource1_NhanSu.SelectCommand = Search
+        End If
+        If cbSearch.SelectedValue = "3" Then
+            Search = "SELECT hr_NhanVien.*, hr_ChiNhanh.MaCongTy
+                        FROM   hr_NhanVien INNER JOIN hr_BoPhanLamViec ON hr_NhanVien.BoPhanLamViecID = hr_BoPhanLamViec.MaBoPhan INNER JOIN hr_ChiNhanh ON hr_BoPhanLamViec.MaChiNhanh = hr_ChiNhanh.MaChiNhanh
+                        WHERE (hr_ChiNhanh.MaCongTy = @MaCongTy) AND (TinhTrang like N'%" + txtSearch.Text.ToString() + "%')"
+            SqlDataSource1_NhanSu.SelectCommand = Search
+        End If
+        If cbSearch.SelectedValue = "4" Then
+            Search = "SELECT hr_NhanVien.*, hr_ChiNhanh.MaCongTy, hr_BoPhanLamViec.TenBoPhan
+                        FROM   hr_NhanVien INNER JOIN hr_BoPhanLamViec ON hr_NhanVien.BoPhanLamViecID = hr_BoPhanLamViec.MaBoPhan INNER JOIN hr_ChiNhanh ON hr_BoPhanLamViec.MaChiNhanh = hr_ChiNhanh.MaChiNhanh
+                        WHERE (hr_ChiNhanh.MaCongTy = @MaCongTy) AND (TenBoPhan like N'%" + txtSearch.Text.ToString() + "%')"
+            SqlDataSource1_NhanSu.SelectCommand = Search
+        End If
+        If cbSearch.SelectedValue = "5" Then
+            Search = "SELECT hr_NhanVien.*, hr_ChiNhanh.MaCongTy, hr_TrinhDoHocVan.TrinhDoHocVan
+                        FROM   hr_NhanVien INNER JOIN hr_BoPhanLamViec ON hr_NhanVien.BoPhanLamViecID = hr_BoPhanLamViec.MaBoPhan INNER JOIN hr_ChiNhanh ON hr_BoPhanLamViec.MaChiNhanh = hr_ChiNhanh.MaChiNhanh
+                        INNER JOIN hr_TrinhDoHocVan ON hr_TrinhDoHocVan.MaTrinhDoHocVan = hr_NhanVien.TrinhDoHocVanID
+                        WHERE (hr_ChiNhanh.MaCongTy = @MaCongTy) AND (TrinhDoHocVan like N'%" + txtSearch.Text.ToString() + "%')"
+            SqlDataSource1_NhanSu.SelectCommand = Search
+        End If
+    End Sub
+    'Protected Sub GridView1_DataBound(sender As Object, e As EventArgs) Handles gv_NhanSu.DataBound
+    '    Try
+    '        gv_NhanSu.SelectedIndex = 0
+    '    Catch ex As Exception
+    '        ClientScript.RegisterStartupScript(Me.[GetType](), "myalert", "alert('Vui long kiem tra lai!');", True)
+    '    End Try
+    'End Sub
+
+    Protected Sub btnRefesh_Click(sender As Object, e As EventArgs) Handles btnRefesh.Click
+        Response.Redirect("./hrU00_NhanSu.aspx")
     End Sub
 End Class

@@ -75,7 +75,8 @@
                                     <tr>
                                         <td>Email: (*) </td>
                                         <td>
-                                            <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server" ReadOnly="false"></asp:TextBox>
+                                            <asp:DropDownList ID="cbEmail" CssClass="form-control" runat="server" DataSourceID="SqlDataSource3_NhanSu" DataTextField="HoTen" DataValueField="Email" AutoPostBack="True">
+                                            </asp:DropDownList>
                                         </td>
                                     </tr>
 
@@ -174,7 +175,8 @@
                                     <tr>
                                         <td>Email: (*) </td>
                                         <td>
-                                            <asp:TextBox ID="txtEmail1" CssClass="form-control" runat="server" ReadOnly="True" BackColor="Gray"></asp:TextBox>
+                                            <asp:DropDownList ID="cbEmail1" CssClass="form-control" runat="server" DataSourceID="SqlDataSource3_NhanSu" DataTextField="HoTen" Enabled="False" DataValueField="Email" AutoPostBack="True">
+                                            </asp:DropDownList>                                        
                                         </td>
                                     </tr>
 
@@ -287,6 +289,10 @@
             <asp:SqlDataSource ID="SqlDataSource2_TinhTrang" runat="server"
                 ConnectionString="<%$ ConnectionStrings:HRMConnectionString %>"
                 SelectCommand="SELECT * FROM [A00_TinhTrangTaiKhoan]">
+            </asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource3_NhanSu" runat="server"
+                ConnectionString="<%$ ConnectionStrings:HRMConnectionString %>"
+                SelectCommand="SELECT HoLot + ' ' + Ten AS HoTen, Email FROM hr_NhanVien">
             </asp:SqlDataSource>
         </div>
     </asp:Panel>

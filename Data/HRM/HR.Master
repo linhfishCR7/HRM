@@ -45,7 +45,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="Default.aspx">Trang Chủ</a></li>
+                        <li><a href="hrM08_NhanSuCongTy.aspx">Trang Chủ</a></li>
                         <li><a href="#">Giới Thiệu</a></li>
                         <li><a href="#">Điều Khoản Sử Dụng</a></li>
                         <li><a href="#">Tin Tức</a></li>
@@ -141,9 +141,9 @@
                             <asp:Panel ID="Panel4" runat="server" CssClass="list-group-item">
                                 <asp:TreeView ID="TreeView7" runat="server" Width="100%" NodeWrap="True" CssClass="table table-responsive">
                                     <Nodes>
-                                        <asp:TreeNode Text="4.1 QUẢN LÝ KỸ NĂNG" Value="#" SelectAction="None">
+                                        <%--<asp:TreeNode Text="4.1 QUẢN LÝ KỸ NĂNG" Value="#" SelectAction="None">
                                             <asp:TreeNode Text="4.1.1 Kỹ Năng" Value="#" NavigateUrl="~/Data/HRM/Report/hrR01_BangCap.aspx"></asp:TreeNode>
-                                        </asp:TreeNode>
+                                        </asp:TreeNode>--%>
                                         <asp:TreeNode Text="4.2 CẬP NHẬT KỸ NĂNG" Value="4.2 CẬP NHẬT KỸ NĂNG">
                                             <asp:TreeNode NavigateUrl="~/Data/HRM/Update/hrU03_KyNang.aspx" Text="4.2.1 Kỹ Năng" Value="4.2.1 Kỹ Năng"></asp:TreeNode>
                                         </asp:TreeNode>
@@ -294,7 +294,7 @@
                                 <asp:TreeView ID="TreeView15" runat="server" Width="100%" NodeWrap="True" CssClass="table table-responsive">
                                     <Nodes>
                                         <asp:TreeNode Text="12.1 QUẢN LÝ THĂNG TIẾN" Value="#" SelectAction="None">
-                                            <asp:TreeNode Text="12.1.1 Danh Sách Thăng Tiến" Value="#" NavigateUrl="~/Data/HRM/Update/hrU20_ChucVu"></asp:TreeNode>
+                                            <asp:TreeNode Text="12.1.1 Danh Sách Thăng Tiến" Value="#" NavigateUrl="~/Data/HRM/Report/hrR20_ThangTien.aspx"></asp:TreeNode>
                                         </asp:TreeNode>
                                         <asp:TreeNode Text="12.2 CẬP NHẬT THĂNG TIẾN" Value="12.2 CẬP NHẬT THĂNG TIẾN">
                                             <asp:TreeNode NavigateUrl="~/Data/HRM/Update/hrU11_ThangTien.aspx" Text="12.2.1 Cập Nhật Thăng Tiến" Value="12.2.1 Cập Nhật Thăng Tiến"></asp:TreeNode>

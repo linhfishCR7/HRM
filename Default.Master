@@ -96,13 +96,18 @@
                         <div class="row align-items-center">
                             <div class="col-xl-12 col-md-12">
                                 <div class="slider_text text-center">
-                                    <%--<h3>QUẢN LÝ</h3>
+                                    <h3>HỆ THỐNG QUẢN LÝ</h3>
                                     <br />
                                     <br />
                                     <br />
                                     <br />
-                                    <h3>NHÂN SỰ</h3>
-                                    <p></p>--%>
+                                    <h3>NHÂN SỰ TRONG DỰ ÁN</h3>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <h3>XÂY DỰNG</h3>
+                                    <p></p>
                                     <a href="#" class="boxed-btn3">Start</a>
                                 </div>
                             </div>
