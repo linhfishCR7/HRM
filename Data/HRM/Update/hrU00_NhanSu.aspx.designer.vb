@@ -12,7 +12,43 @@ Option Explicit On
 
 
 Partial Public Class hrU00_NhanSu
-    
+
+    '''<summary>
+    '''cbSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cbSearch As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''txtSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtSearch As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnSearch As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''btnRefesh control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnRefesh As Global.System.Web.UI.WebControls.LinkButton
+
     '''<summary>
     '''UpdatePanel2 control.
     '''</summary>

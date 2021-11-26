@@ -71,7 +71,7 @@
                             <img src="/Content/Themes/Study4u/img/place/harvard.jpg" alt="">
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html">
+                            <a href="#">
                                 <h3>Harvard</h3>
                             </a>
                             <p>United State of America</p>
@@ -85,7 +85,7 @@
                             <img src="/Content/Themes/Study4u/img/undraw_education_f8ru.svg" alt="">
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html">
+                            <a href="#">
                                 <h3>Sách Báo</h3>
                             </a>
                             <p>Minh Họa</p>
@@ -100,7 +100,7 @@
                             <!-- <a href="#" class="prise">$500</a> -->
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html">
+                            <a href="#">
                                 <h3>Công Nghệ</h3>
                             </a>
                             <p>Minh Họa</p>
@@ -114,7 +114,7 @@
                             <img src="/Content/Themes/Study4u/img/phongcanh.jfif" alt="">
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html">
+                            <a href="#">
                                 <h3>Thiên Nhiên</h3>
                             </a>
                             <p>Minh Họa</p>
@@ -128,7 +128,7 @@
                             <img src="/Content/Themes/Study4u/img/tuvankhachhang.png" alt="">
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html">
+                            <a href="#">
                                 <h3>Tư Vấn</h3>
                             </a>
                             <p>Minh Họa</p>
@@ -142,7 +142,7 @@
                             <img src="/Content/Themes/Study4u/img/vanphong.jpeg" alt="">
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html">
+                            <a href="#">
                                 <h3>Văn Phòng</h3>
                             </a>
                             <p>Minh Họa</p>

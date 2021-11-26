@@ -74,7 +74,7 @@ Partial Public Class A_TaiKhoanNguoiDung
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtEmail As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cbEmail As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''txtMaKhau control.
@@ -164,7 +164,7 @@ Partial Public Class A_TaiKhoanNguoiDung
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtEmail1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cbEmail1 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''txtMaKhau1 control.

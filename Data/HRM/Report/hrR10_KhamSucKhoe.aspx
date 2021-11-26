@@ -26,7 +26,7 @@
             </rsweb:ReportViewer>
             <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetDataByMaCongTy" TypeName="HRM.dsHRMTableAdapters.vhr_KhamSucKhoeTableAdapter" OldValuesParameterFormatString="original_{0}">
                 <SelectParameters>
-                    <asp:QueryStringParameter Name="MaCongTy" QueryStringField="MaCongTy" Type="String" />
+                    <asp:SessionParameter Name="MaCongTy" SessionField="MaCongTy" Type="String" />
                 </SelectParameters>
             </asp:ObjectDataSource>
         </div>

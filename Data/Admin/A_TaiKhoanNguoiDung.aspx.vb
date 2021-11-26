@@ -81,7 +81,7 @@ Public Class A_TaiKhoanNguoiDung
 
         If IsValid Then
             Dim parameters = SqlDataSource1.InsertParameters
-            parameters("Email").DefaultValue = txtEmail.Text
+            parameters("Email").DefaultValue = cbEmail.SelectedValue
             parameters("MatKhau").DefaultValue = txtMaKhau.Text
             parameters("HoTen").DefaultValue = txtHoTen.Text
             parameters("NgayTao").DefaultValue = txtNgayTao.Text
@@ -89,7 +89,7 @@ Public Class A_TaiKhoanNguoiDung
 
             Try
 
-                If txtEmail.Text = "" Then
+                If cbEmail.SelectedValue = "" Then
                     ScriptManager.RegisterStartupScript(Me, [GetType](), "showalert", "alert('Các trường (*) không được bỏ trống.' );", True)
                 ElseIf txtMaKhau.Text = "" Then
                     ScriptManager.RegisterStartupScript(Me, [GetType](), "showalert", "alert('Các trường (*) không được bỏ trống.' );", True)
@@ -97,7 +97,6 @@ Public Class A_TaiKhoanNguoiDung
                     ScriptManager.RegisterStartupScript(Me, [GetType](), "showalert", "alert('Các trường (*) không được bỏ trống.' );", True)
                 Else
                     SqlDataSource1.Insert()
-                    txtEmail.Text = ""
                     txtMaKhau.Text = ""
                     txtHoTen.Text = ""
                     txtNgayTao.Text = ""
@@ -121,7 +120,7 @@ Public Class A_TaiKhoanNguoiDung
         If e.CommandName.Equals("editRecord") Then
             Dim gvrow As GridViewRow = GridView1.Rows(index)
 
-            txtEmail1.Text = HttpUtility.HtmlDecode(gvrow.Cells(2).Text).ToString()
+            cbEmail1.SelectedValue = HttpUtility.HtmlDecode(gvrow.Cells(2).Text).ToString()
             txtMaKhau1.Text = HttpUtility.HtmlDecode(gvrow.Cells(3).Text).ToString()
             txtHoTen1.Text = HttpUtility.HtmlDecode(gvrow.Cells(4).Text).ToString().Trim()
             txtNgayTao1.Text = HttpUtility.HtmlDecode(gvrow.Cells(5).Text).ToString().Trim()
@@ -151,7 +150,7 @@ Public Class A_TaiKhoanNguoiDung
         If IsValid Then
 
             Dim parameters = SqlDataSource1.UpdateParameters
-            parameters("Email").DefaultValue = txtEmail1.Text
+            parameters("Email").DefaultValue = cbEmail1.SelectedValue
             parameters("MatKhau").DefaultValue = txtMaKhau1.Text
             parameters("HoTen").DefaultValue = txtHoTen1.Text
             parameters("NgayTao").DefaultValue = txtNgayTao1.Text
@@ -159,7 +158,7 @@ Public Class A_TaiKhoanNguoiDung
 
             Try
 
-                If txtEmail1.Text = "" Then
+                If cbEmail1.SelectedValue = "" Then
                     ScriptManager.RegisterStartupScript(Me, [GetType](), "showalert", "alert('Các trường (*) không được bỏ trống.' );", True)
                 ElseIf txtMaKhau1.Text = "" Then
                     ScriptManager.RegisterStartupScript(Me, [GetType](), "showalert", "alert('Các trường (*) không được bỏ trống.' );", True)
